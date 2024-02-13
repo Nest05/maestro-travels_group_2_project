@@ -5,6 +5,8 @@ import Home from './Home';
 import { Route, Switch } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 
+const y = 10; 
+
 function App() {
 
   const [jsonData, setJsonData] = useState([])
