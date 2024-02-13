@@ -1,11 +1,13 @@
 
 import './App.css';
 import {  DiAptana } from "react-icons/di";
+import { FiMenu } from "react-icons/fi";
 
 function App() {
   return (
     <div className="App">
-     <button><DiAptana size={30} /></button>
+     <span><DiAptana size={30} /></span>
+     <span><FiMenu size={30}/> </span>
      <h1>We here</h1>
     </div>
   );
