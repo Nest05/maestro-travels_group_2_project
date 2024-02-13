@@ -1,0 +1,151 @@
+{
+    "users": [
+        {"id":1,
+         "username": "",
+         "password": ""
+        },
+        {}
+    ],
+    "destinations": [
+      {
+        "id": 1,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }   
+      },
+      {
+        "id": 2,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }       
+      },
+      {
+        "id": 3,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }     
+      },
+      {
+        "id": 4,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }      
+      },
+      {
+        "id": 5,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }         
+      },
+      {
+        "id": 6,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }   
+      },
+      {
+        "id": 7,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }   
+      },
+      {
+        "id": 8,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }   
+      },
+      {
+        "id": 9,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }   
+      },
+      {
+        "id": 10,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "services": {
+            "id":1,
+            "images":[],
+            "Accomodation": "",
+            "cost": "",
+            "other-services":[]
+        }   
+      }
+    ]
+  }
