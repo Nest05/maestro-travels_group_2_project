@@ -1,6 +1,41 @@
 {
-  "comments": [],
-  "users": [{ "id": 1, "username": "", "password": "" }, {}],
+
+  "comments": [
+    {
+      "text": "Hey we here",
+      "likes": 0,
+      "id": 1
+    }
+  ],
+   "users": [
+    { "id": 1, "username": "ouma@maestrotravels.com", "password": "Ouma2024" },
+
+    {
+      "id": 2,
+      "username": "naomi@maestrotravels.com",
+      "password": "naomi2024"
+    },
+    {
+      "id": 3,
+      "username": "nestor@maestrotravels.com",
+      "password": "nestor2024"
+    },
+    {
+      "id": 4,
+      "username": "levis@maestrotravels.com",
+      "password": "levis2024"
+    },
+    {
+      "id": 5,
+      "username": "kimani@maestrotravels.com",
+      "password": "kimani2024"
+    },
+    {
+      "id": 6,
+      "username": "oliver@maestrotravels.com",
+      
+
+  ],
   "destinations": [
     {
       "id": 1,
@@ -8,7 +43,12 @@
       "location": "Nairobi, Kenya",
       "image": "https://rb.gy/8sc8uv",
       "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
-      "reviews": ["Good", "Fair", "Horrible", "Excellent"],
+      "reviews": [
+        "Good",
+        "Fair",
+        "Horrible",
+        "Excellent"
+      ],
       "services": {
         "id": 1,
         "images": [
@@ -20,7 +60,11 @@
           "https://rebrand.ly/6gr1pmf"
         ],
         "accomodation": "Available",
-        "otherServices": ["Bird watching", "Game viewing", "Safari Walk"]
+        "otherServices": [
+          "Bird watching",
+          "Game viewing",
+          "Safari Walk"
+        ]
       }
     },
     {
