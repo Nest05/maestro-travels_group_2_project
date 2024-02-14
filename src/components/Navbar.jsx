@@ -4,14 +4,15 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <ul>
-        <li>
+      
           <NavLink to={"/"}>Home</NavLink>
-        </li>
-        <li>
+        
           <NavLink to={"/about"}>About</NavLink>
-        </li>
-      </ul>
+
+          <NavLink to={"/destination-form"}>Add Destination</NavLink>
+
+          <NavLink to={"/login"}>Login</NavLink>
+       
     </div>
   );
 }
