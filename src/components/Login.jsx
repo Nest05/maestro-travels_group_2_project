@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import AddDestinationForm from "./AddDestinationForm";
-import DisplayReviews from "./DisplayReviews";
+// import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/users"
 
 const Login = () =>{
@@ -71,7 +71,7 @@ const Login = () =>{
             ):(
                 <>
                 <AddDestinationForm tourGuide={userData.tourGuide} />
-                <DisplayReviews facilityGuide={userData.tourGuide} />
+                {/* <DisplayReviews facilityGuide={userData.tourGuide} /> */}
                 </>
             )
             }
@@ -79,5 +79,5 @@ const Login = () =>{
     )
 }
 
-export default Login
+export default Login
 
