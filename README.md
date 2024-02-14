@@ -1,17 +1,19 @@
 <h1 align="center">Maestro-travels</h1>
 
 ## Description :bulb:
-Maestro travels is a web application that lets you view,book,leave a review for different hotels/parks/restaurants.
-We all have had a moment where we want to get out of the house and spend time with our loved ones or even by ourselves but we did not really know where to go.
-At Maestro travels you can view different hotels/restaurants/parks and even make a booking/reservation.
-For hotel owners/tour guides they can upload your hotel/restaurant on the web app.
+
+- Maestro travels is a web application that lets you view,book,leave a review for different hotels/parks/restaurants.
+- We all have had a moment where we want to get out of the house and spend time with our loved ones or even by ourselves but we did not really know where to go.
+- At Maestro travels you can view different hotels/restaurants/parks and even make a booking/reservation.
+- For hotel owners/tour guides they can upload your hotel/restaurant on the web app.
 
 ## Requirements :bulb:
 This is a project for Moringa's phase-2 bootcamp and the requirements were as follows:
--You must make a single page application (only one index.html file) using create-react-app
--Your app should use at least 5 components in a way that keeps your code well organized
--There should be at least 3 client-side routes using react-routerLinks to an external site.
--Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
+
+- You must make a single page application (only one index.html file) using create-react-app
+- Your app should use at least 5 components in a way that keeps your code well organized
+- There should be at least 3 client-side routes using react-routerLinks to an external site.
+- Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
 
 ## Tech Stack
 
