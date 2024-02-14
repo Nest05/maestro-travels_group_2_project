@@ -5,6 +5,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Andika", sans-serif;
+    
+      
+}
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/13/clouds-310110_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 span{
     color: blue;
