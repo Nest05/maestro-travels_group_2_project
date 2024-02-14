@@ -6,7 +6,7 @@ const url = "http://localhost:3000/destinations"
 - Handles errors in fetch
 - Manages states of isLoading, error, and  reviews
 */ 
-const DisplayReviews = ({ facilityId }) =>{
+const DisplayReviews = ({ facilityGuide }) =>{
     const [reviews, setReviews] = useState([]);
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState("");
@@ -15,9 +15,18 @@ const DisplayReviews = ({ facilityId }) =>{
         const fetchReviews = async () =>{
             setIsLoading(true)
             try{
-                const response = await fetch(`${url}/${facilityId}`)
-                const data = await response.json()
-                setReviews(data.reviews);
+                // Fetch all destinations
+                const response = await fetch(url);
+                if (response.ok) {
+                const destinations = await response.json();
+                // Filter destinations by the logged-in tour guide
+                const filteredDestinations = destinations.filter(destination => destination.tourGuide === facilityGuide);
+                // Extract reviews from these destinations
+                const allReviews = filteredDestinations.reduce((acc, destination) => [...acc, ...destination.reviews], []);
+                setReviews(allReviews);
+                } else {
+                throw new Error("Failed to fetch destinations");
+                }
 
             }catch(err){
                 console.log(err);
@@ -29,12 +38,12 @@ const DisplayReviews = ({ facilityId }) =>{
         }
         fetchReviews()
 
-        // // Fetch the reviews after every 10 seconds
-        // const interval = setInterval(fetchReviews, 20000);
+        // Fetch the reviews after every 10 seconds
+        const interval = setInterval(fetchReviews, 20000);
 
-        // // Clean the interval to avoid memory leaks
-        // return () => clearInterval(interval)
-    }, [facilityId])
+        // Clean the interval to avoid memory leaks
+        return () => clearInterval(interval)
+    }, [facilityGuide])
 
     return (
         <div>
