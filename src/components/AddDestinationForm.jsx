@@ -161,7 +161,7 @@ const AddDestinationForm = () =>{
     }
 
     return (
-        <div id="add-destination-card">
+        <div className="about">
             <form id="add-destination" onSubmit={handleSubmit} action="submit">
                 <label className="label" htmlFor="label">Facility Name</label>
                 <br />

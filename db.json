@@ -1,22 +1,71 @@
 {
-  "users": [
+  "comments": [
     {
-      "id": 1,
-      "username": "ouma@maestrotravel.com",
-      "password": "Ouma2024"
-    },
+      "text": "Hey we here",
+      "likes": 0,
+      "id": 1
+    }
+  ],
+   "users": [
+    { "id": 1, "username": "ouma@maestrotravels.com", "password": "Ouma2024" },
+
     {
       "id": 2,
-      "username": "nestor@maestrotravel.com",
-      "password": "Nestor2024"
+      "username": "naomi@maestrotravels.com",
+      "password": "naomi2024"
     },
     {
       "id": 3,
-      "username": "Oliver@maestrotravel.com",
-      "password": "Oliver2024"
-    }
+      "username": "nestor@maestrotravels.com",
+      "password": "nestor2024"
+    },
+    {
+      "id": 4,
+      "username": "levis@maestrotravels.com",
+      "password": "levis2024"
+    },
+    {
+      "id": 5,
+      "username": "kimani@maestrotravels.com",
+      "password": "kimani2024"
+    },
+    {
+      "id": 6,
+      "username": "oliver@maestrotravels.com",
+      
+
   ],
   "destinations": [
+    {
+      "id": 1,
+      "name": "Nairobi National Park",
+      "location": "Nairobi, Kenya",
+      "image": "https://rb.gy/8sc8uv",
+      "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
+      "reviews": [
+        "Good",
+        "Fair",
+        "Horrible",
+        "Excellent"
+      ],
+      "services": {
+        "id": 1,
+        "images": [
+          "https://rb.gy/8sc8uv",
+          "https://rb.gy/8sc8uv",
+          "https://rb.gy/ol5isx",
+          "https://rb.gy/lcju9x",
+          "https://rb.gy/uhixog",
+          "https://rebrand.ly/6gr1pmf"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Bird watching",
+          "Game viewing",
+          "Safari Walk"
+        ]
+      }
+    },
     {
       "name": "Rusinga Island Lodge",
       "tourGuide": "ouma@maestrotravel.com",
@@ -44,7 +93,7 @@
           "Fishing"
         ]
       },
-      "id": 1
+      "id": 2
     }
   ]
 }
