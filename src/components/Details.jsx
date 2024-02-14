@@ -13,7 +13,7 @@ function Details({jsonData}) {
   return (
     <div>
         <h3>Name: {destinationDetails.name} </h3>
-        <img src={destinationDetails.image} alt='image' />
+        <img src={destinationDetails.image} alt='Destination look' />
         <h3>Location: {destinationDetails.location} </h3>
         <h4> Description: {destinationDetails.description} </h4>
         <h4>Reviews:</h4>
@@ -31,7 +31,7 @@ function Details({jsonData}) {
             { destinationDetails.services.images.map((image) => {
                 return (
                     <div>
-                        <img src={image}/>
+                        <img src={image} alt='Destination look'/>
                     </div>
                 )
             })}

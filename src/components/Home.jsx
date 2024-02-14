@@ -10,7 +10,7 @@ function Home({jsonData}) {
         jsonData.map( destination => (
         <div key={destination.id}>
             <h3>Name: {destination.name} </h3>
-            <img src={destination.image} alt='image' />
+            <img src={destination.image} alt='Destination look' />
             <h3>Location: {destination.location}</h3>
             <h4> Description: {destination.description} </h4>
             <NavLink to={`/${destination.id}`}>
@@ -18,10 +18,7 @@ function Home({jsonData}) {
             </NavLink>
         </div>
         ))            
-         }
-        
-        
-
+         }     
     </div>
   )
 }
