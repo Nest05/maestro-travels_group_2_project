@@ -1,12 +1,12 @@
-
+import React from "react";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  
 
   const onButtonClick = () => {
     setEmailError("");
@@ -16,7 +16,6 @@ const Login = (props) => {
       setEmailError("Please enter your email");
       return;
     }
-
     if (!/^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
       setEmailError("Please enter a valid email");
       return;
@@ -32,7 +31,6 @@ const Login = (props) => {
       return;
     }
   };
-
 return (
   <div className={"mainContainer"}>
     <div className={"titleContainer"}>
@@ -73,3 +71,4 @@ return (
 );
 }
 export default Login
+
