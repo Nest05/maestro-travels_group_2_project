@@ -5,6 +5,7 @@ import Comments from "./Comments";
 function About() {
   return (
     <div>
+      <div className="about">
       <h1>About Us</h1>
       <p>
         Welcome to <strong>Maestro Travels</strong> – Your Gateway to Kenya
@@ -47,6 +48,7 @@ function About() {
         Learn more about the faces behind the scenes and their love for
         exploration.
       </p>
+      </div>
       <div className="main">
         <div className="my-container">
           <div className="team-image">
@@ -101,7 +103,7 @@ function About() {
         <div className="my-container">
           <div className="team-image">
             <img
-              src="https://images.unsplash.com/photo-1529335764857-3f1164d1cb24?q=80&w=1378&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://rebrand.ly/wro83wn"
               alt="Oliver"
             />
           </div>
@@ -111,7 +113,7 @@ function About() {
           </div>
         </div>
       </div>
-
+      <div className="about">
       <h3>How You Can Contribute</h3>
       <p>
         Maestro Travels thrives on the contributions of the travel community. If
@@ -136,8 +138,9 @@ function About() {
         that await you!
       </p>
       <p>Happy Exploring!</p>
-
       <Comments />
+      </div>
+
     </div>
   );
 }

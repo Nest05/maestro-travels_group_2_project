@@ -1,150 +1,154 @@
 {
-  "users": [{ "id": 1, "username": "", "password": "" }, {}],
-  "destinations": [
-    {
-      "id": 1,
-      "name": "Nairobi National Park",
-      "location": "Nairobi, Kenya",
-      "image": "https://rb.gy/8sc8uv",
-      "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
-      "reviews": ["", "", "", ""],
-      "services": {
+    "comments": [],
+    "users": [
+        {"id":1,
+         "username": "",
+         "password": ""
+        },
+        {}
+    ],
+    "destinations": [
+      {
         "id": 1,
-        "images": [
-          "https://rb.gy/ol5isx",
-          "https://rb.gy/lcju9x",
-          "https://rb.gy/uhixog",
-          "https://rebrand.ly/6gr1pmf"
-        ],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 2,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 3,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 4,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 6,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 7,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 8,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 9,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    },
-    {
-      "id": 10,
-      "name": "",
-      "location": "",
-      "image": "",
-      "description": "",
-      "reviews": [],
-      "services": {
-        "id": 1,
-        "images": [],
-        "Accomodation": "",
-        "other-services": []
-      }
-    }
+        "name": "Nairobi National Park",
+        "location": "Nairobi, Kenya",
+        "image": "https://rb.gy/8sc8uv",
+        "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
+        "reviews":["Good","Fair","Horrible","Excellent"],
+        "services": {
+            "id":1,
+            "images":["https://rb.gy/8sc8uv", "https://rb.gy/8sc8uv", "https://rb.gy/ol5isx", "https://rb.gy/lcju9x", "https://rb.gy/uhixog", "https://rebrand.ly/6gr1pmf"],
+            "accomodation": "Available",
+            "otherServices":["Bird watching", "Game viewing", "Safari Walk" ]
+        }   
+      },
+      {
+        "id": 2,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }       
+      },
+      {
+        "id": 3,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }     
+      },
+      {
+        "id": 4,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }      
+      },
+      {
+        "id": 5,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }         
+      },
+      {
+        "id": 6,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }   
+      },
+      {
+        "id": 7,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }   
+      },
+      {
+        "id": 8,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }   
+      },
+      {
+        "id": 9,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }   
+      },
+      {
+        "id": 10,
+        "name": "",
+        "location": "",
+        "image": "",
+        "description": "",
+        "reviews":[],
+        "services": {
+            "id":1,
+            "images":[],
+            "accomodation": "",
+            "otherServices":[]
+        }   
+     }
   ]
 }
+      
+   
