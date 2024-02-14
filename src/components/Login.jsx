@@ -5,6 +5,7 @@ const url = "http://localhost:3000/users"
 
 const Login = () =>{
 
+
     const [users, setUsers] = useState([]);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [loginError, setLoginError] = useState([]);
@@ -27,7 +28,6 @@ const Login = () =>{
                 const response = await fetch(url);
                 const data = await response.json();
                 setUsers(data)
-
             }catch(err){
                 console.log(err)
             }
@@ -43,11 +43,9 @@ const Login = () =>{
             setLoginError("Incorrect username or password")
         }
     }
-
     return (
         <div>
             {!isLoggedIn ?
-
                 (<div>
                 <label htmlFor="login"></label>
                 <br />
@@ -82,3 +80,4 @@ const Login = () =>{
 }
 
 export default Login
+
