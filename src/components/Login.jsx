@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import AddDestinationForm from "./AddDestinationForm";
+import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/users"
 
 const Login = () =>{
@@ -8,7 +9,7 @@ const Login = () =>{
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [loginError, setLoginError] = useState([]);
     const [userData, setUserData] = useState({
-        username: "",
+        tourGuide: "",
         password: ""
     })
 
@@ -35,7 +36,7 @@ const Login = () =>{
     }, [])
 
     const confirmPassword = () =>{
-        const userExists = users.some(user => user.username === userData.username && user.password === userData.password);
+        const userExists = users.some(user => user.username === userData.tourGuide && user.password === userData.password);
         if (userExists){
             setIsLoggedIn(true)
         }else{
@@ -51,10 +52,10 @@ const Login = () =>{
                 <label htmlFor="login"></label>
                 <br />
                 <input 
-                    name="username"
+                    name="tourGuide"
                     type="text" 
                     placeholder="Enter username"
-                    value={userData.username} 
+                    value={userData.tourGuide} 
                     onChange={handleChange}
                 />
                 <br />
@@ -70,7 +71,10 @@ const Login = () =>{
                 <button onClick={confirmPassword}>Continue</button>
             </div>
             ):(
-                <AddDestinationForm tourGuide={userData.username} />
+                <>
+                <AddDestinationForm tourGuide={userData.tourGuide} />
+                <DisplayReviews facilityGuide={userData.tourGuide} />
+                </>
             )
             }
         </div>
