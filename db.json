@@ -32,7 +32,8 @@
     {
       "id": 6,
       "username": "oliver@maestrotravels.com",
-      
+      "password": "oliver2024"
+    }
 
   ],
   "destinations": [
@@ -70,7 +71,7 @@
       "name": "Rusinga Island Lodge",
       "tourGuide": "ouma@maestrotravel.com",
       "location": "Homabay",
-      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.trvl-media.com%2Fhotels%2F13000000%2F12750000%2F12748800%2F12748721%2Fd7d4bdfe_z.jpg&tbnid=Qg_HIt0BFjxPEM&vet=12ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygFegQIARBp..i&imgrefurl=https%3A%2F%2Fwww.orbitz.com%2FRusinga-Island-Hotels-Rusinga-Island-Lodge.h12748721.Hotel-Information&docid=1DBgQ3KRBoLBYM&w=1000&h=666&q=rusinga%20island%20lodge&ved=2ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygFegQIARBp",
+      "image": "https://images.trvl-media.com/hotels/13000000/12750000/12748800/12748721/d7d4bdfe_z.jpg",
       "description": "Rusinga Island Lodge, nestled on the shores of Lake Victoria, offers a tranquil retreat with an exquisite blend of natural beauty and luxury. This serene haven is renowned for its impeccable service, including lavish accommodations that promise comfort and privacy. Guests can indulge in a variety of services such as a refreshing swimming pool, gourmet dining featuring local and international cuisine, and wellness treatments in the spa. The lodge is also a gateway to adventure, offering activities like bird watching, fishing expeditions on the lake, and cultural tours to nearby villages, providing an immersive experience into the local heritage and natural splendor of the region. With its stunning lake views, lush gardens, and an array of leisure and adventure activities, Rusinga Island Lodge is the perfect destination for those seeking relaxation and a touch of adventure amidst nature's beauty.",
       "reviews": ["My stay at Rusinga Island Lodge was nothing short of magical. From the moment we arrived, we were greeted with warm smiles and breathtaking views. The accommodations were luxurious, offering comfort and serenity with each sunrise over Lake Victoria. The staff went above and beyond to ensure our stay was memorable, arranging for delightful cultural tours and exhilarating fishing trips. Dining under the stars with expertly prepared cuisine was a highlight. This lodge truly is a hidden gem.",
       "Rusinga Island Lodge offered an unparalleled retreat into nature's embrace. The swimming pool was a refreshing oasis, and the spa treatments left me feeling rejuvenated. What stood out the most, however, was the lodge's commitment to providing an authentic experience, including the bird watching excursions which were a bird lover's dream. Each meal was a culinary adventure, blending local flavors with gourmet finesse. I left feeling deeply connected to the beauty and culture of the area.",
@@ -78,11 +79,11 @@
       "Our experience at Rusinga Island Lodge was exceptional. The setting is idyllic, offering serene lake views and beautifully landscaped gardens. The services were impeccable, with a special mention to the delicious dining experience and the adventurous fishing expeditions that were expertly organized by the lodge. The staff's attention to detail and the cozy, well-appointed accommodations made our visit incredibly comfortable. Rusinga Island Lodge is a sanctuary for those seeking tranquility and a touch of adventure."],
       "services": {
         "images": [
-          "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.kenyasafari.com%2Fimages%2Frusinga-island-lodge-exterior-590x390.jpg&tbnid=BRFYJm1ZlKulxM&vet=12ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygGegQIARBr..i&imgrefurl=https%3A%2F%2Fwww.kenyasafari.com%2Frusinga-island-lodge-lake-victoria.html&docid=NfphypQnYfug7M&w=590&h=390&q=rusinga%20island%20lodge&ved=2ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygGegQIARBr",
-          "https://www.google.com/imgres?imgurl=https%3A%2F%2Ftheholidaydealers.com%2Fwp-content%2Fuploads%2F2023%2F04%2FRusinga-Island-Lodge-31-850x540.jpg&tbnid=1ymg39lVgRguuM&vet=12ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygEegQIARBn..i&imgrefurl=https%3A%2F%2Ftheholidaydealers.com%2Fdestinations%2Fkenya%2Fkisumu%2Frusinga-island-lodge%2F&docid=cs6IE2ZRaMT1SM&w=850&h=540&q=rusinga%20island%20lodge&ved=2ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygEegQIARBn",
-          "https://www.google.com/imgres?imgurl=https%3A%2F%2Fdynamic-media-cdn.tripadvisor.com%2Fmedia%2Fphoto-o%2F0a%2F13%2F81%2F66%2Fguest-bedroom-rusinga.jpg%3Fw%3D700%26h%3D-1%26s%3D1&tbnid=Q7xrIj-F7Lr6oM&vet=12ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygAegQIARBf..i&imgrefurl=https%3A%2F%2Fwww.tripadvisor.com%2FHotel_Review-g644022-d633391-Reviews-Rusinga_Island_Lodge-Rusinga_Island_Nyanza_Province.html&docid=Gw3IJ6Evxm-1aM&w=700&h=554&q=rusinga%20island%20lodge&ved=2ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygAegQIARBf",
-          "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi0.wp.com%2Fwww.scrapbookjourneys.com%2Fwp-content%2Fuploads%2F2017%2F01%2FDSC_6144-Copy.jpg%3Fresize%3D1000%252C667&tbnid=N1h0xKVFMavWcM&vet=12ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygKegQIARBz..i&imgrefurl=https%3A%2F%2Fwww.scrapbookjourneys.com%2F2017%2F01%2F19%2Fchasing-sunsets-at-rusinga-island-lodge%2F&docid=sa5zHFKT-8hq6M&w=1000&h=667&q=rusinga%20island%20lodge&ved=2ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygKegQIARBz",
-          "https://www.google.com/imgres?imgurl=https%3A%2F%2Fpix10.agoda.net%2FhotelImages%2F19936073%2F-1%2F239f9a12318bc1569f99fbfe05eca65a.jpg%3Fca%3D16%26ce%3D1%26s%3D414x232&tbnid=RvyMmcxekieVHM&vet=12ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygLegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.agoda.com%2Frusinga-island-lodge%2Fhotel%2Fmbita-ke.html&docid=c33T_NMk1uukTM&w=348&h=232&q=rusinga%20island%20lodge&ved=2ahUKEwiYg5q-8KqEAxXMdqQEHRquCjUQMygLegQIARB1"
+          "https://www.kenyasafari.com/images/rusinga-island-lodge-exterior-590x390.jpg",
+          "https://theholidaydealers.com/wp-content/uploads/2023/04/Rusinga-Island-Lodge-31-850x540.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/13/81/66/guest-bedroom-rusinga.jpg?w=700&h=-1&s=1",
+          "https://i0.wp.com/www.scrapbookjourneys.com/wp-content/uploads/2017/01/DSC_6144-Copy.jpg?resize=1000%2C667",
+          "https://pix10.agoda.net/hotelImages/19936073/-1/239f9a12318bc1569f99fbfe05eca65a.jpg?ca=16&ce=1&s=414x232"
         ],
         "Accomodation": "Available",
         "otherServices": [
