@@ -1,5 +1,12 @@
 {
-  "users": [{ "id": 1, "username": "", "password": "" }, {}],
+  "users": [
+    {
+      "id": 1,
+      "username": "",
+      "password": ""
+    },
+    {}
+  ],
   "destinations": [
     {
       "id": 1,
