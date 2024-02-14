@@ -32,8 +32,26 @@ function Comments() {
   // Function to handle liking a comment
   const likeComment = (index) => {
     const updatedComments = [...comments];
-    updatedComments[index].likes += 1;
-    setComments(updatedComments);
+    const updatedComment = { ...updatedComments[index] };
+    updatedComment.likes += 1;
+    updatedComments[index] = updatedComment;
+
+    // Make PATCH request to update likes on the server
+    fetch(`http://localhost:8001/comments/${updatedComment.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ likes: updatedComment.likes }),
+  })
+    .then((response) => response.json())
+    .then(() => {
+      // Update state with the updated comment from the server
+      setComments(updatedComments);
+    })
+    .catch((error) => {
+      console.error("Error updating likes:", error);
+    });
   };
 
   // Load comments from the server on component mount
