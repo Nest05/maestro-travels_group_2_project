@@ -8,7 +8,7 @@ function Home({jsonData}) {
     <div>
         {
         jsonData.map( destination => (
-        <div key={destination.id}>
+        <div key={destination.id} className="about">
             <h3>Name: {destination.name} </h3>
             <img src={destination.image} alt='Destination look' />
             <h3>Location: {destination.location}</h3>

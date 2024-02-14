@@ -11,7 +11,7 @@ function Details({jsonData}) {
     console.log(destinationDetails)
 
   return (
-    <div>
+    <div className="about">
         <h3>Name: {destinationDetails && destinationDetails.name} </h3>
         <img src={destinationDetails && destinationDetails.image} alt='Destination look' />
         <h3>Location: {destinationDetails && destinationDetails.location} </h3>
