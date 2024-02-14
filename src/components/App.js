@@ -9,19 +9,30 @@ function App() {
 
   const [jsonData, setJsonData] = useState([])
 
-  useEffect ( () => {
-      fetch("http://localhost:3005/destinations")
-      .then ( (res) => res.json())
-      .then ( data => setJsonData(data))
-  }
-  , [])
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch ("http://localhost:3005/destinations");
+        if (!response.ok) {
+          throw new Error("Database Network Error")
+        }
+        const myJsonData = await response.json();
+        setJsonData(myJsonData)
+      } catch (error){
+        console.error("Error Fetching...", error)
+      }
+    }
+    fetchData()
+  },
+  []);
+  console.log(jsonData)
 
   return (
     <Switch>
       <Route exact path="/">
       <Home jsonData={jsonData} />
       </Route>
-      <Route exact path={`/:id`}>
+      <Route path={`/:id`}>
         <Details jsonData={jsonData}/>
       </Route>
     </Switch>
