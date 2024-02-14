@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Comments from "./Comments";
 
 function About() {
   return (
@@ -135,6 +136,8 @@ function About() {
         that await you!
       </p>
       <p>Happy Exploring!</p>
+
+      <Comments />
     </div>
   );
 }
