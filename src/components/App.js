@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch ("http://localhost:3005/destinations");
+        const response = await fetch ("http://localhost:3000/destinations");
         if (!response.ok) {
           throw new Error("Database Network Error")
         }
@@ -40,16 +40,16 @@ function App() {
           <Route exact path="/">
             <Home jsonData={jsonData} />
           </Route>
-          <Route path={`/:id`}>
+          <Route exact path={`/:id`}>
             <Details jsonData={jsonData}/>
           </Route>
-          <Route path="/about">
+          <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/destination-form">
+          <Route exact path="/destination-form">
             <AddDestinationForm />
           </Route>
-          <Route path="/login">
+          <Route exact path="/login">
             <Login />
           </Route>
         </Switch>
