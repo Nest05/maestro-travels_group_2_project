@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center">Maestro-travels</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description :bulb:
+Maestro travels is a web application that lets you view,book,leave a review for different hotels/parks/restaurants.
+We all have had a moment where we want to get out of the house and spend time with our loved ones or even by ourselves but we did not really know where to go.
+At Maestro travels you can view different hotels/restaurants/parks and even make a booking/reservation.
+For hotel owners/tour guides they can upload your hotel/restaurant on the web app.
 
-## Available Scripts
+## Requirements :bulb:
+This is a project for Moringa's phase-2 bootcamp and the requirements were as follows:
+-You must make a single page application (only one index.html file) using create-react-app
+-Your app should use at least 5 components in a way that keeps your code well organized
+-There should be at least 3 client-side routes using react-routerLinks to an external site.
+-Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+### Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Javascript
+- Html
+- Css
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
 
-### `npm test`
+- JSON
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalation Guide
 
-### `npm run build`
+1. Clone this repository to your local machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone "repository-url"
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Change into the project directory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd maestro-travels_group_2_project
+```
+3. Install the required dependencies.
 
-### `npm run eject`
+```bash
+npm install
+```
+4. Start the development server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
+5. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Remember to have the Json server running using this command;
+```bash
+json-server --watch db.json
+```
+## Authors :black_nib:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Nestar Masinde** <[Nest05](https://github.com/Nest05)>
+- **Naomi Lagat** <[Naomie-Jerutoe](https://github.com/Naomie-Jerutoe)>
+- **John Ouma** <[OumaArera](https://github.com/OumaArera)>
+- **John Kimani** <[Kimoney](https://github.com/Kimoney)>
+- **Oliver Fadhil** <[Oliverfadhil](https://github.com/oliverfadhil)>
+- **Levis Ngigi** <[LevisNgigi](https://github.com/LevisNgigi)>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE)
