@@ -7,7 +7,6 @@ const Login = (props) => {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const navigate = useNavigate();
 
   const onButtonClick = () => {
     setEmailError("");
@@ -17,8 +16,7 @@ const Login = (props) => {
       setEmailError("Please enter your email");
       return;
     }
-
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+    if (!/^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
       setEmailError("Please enter a valid email");
       return;
     }
@@ -33,7 +31,6 @@ const Login = (props) => {
       return;
     }
   };
-};
 return (
   <div className={"mainContainer"}>
     <div className={"titleContainer"}>
@@ -72,5 +69,6 @@ return (
     </div>
   </div>
 );
+}
+export default Login
 
-export default Login;
