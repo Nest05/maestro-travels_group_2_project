@@ -3,11 +3,6 @@ import { NavLink } from 'react-router-dom'
 
 function Home({jsonData}) {
    
-console.log(jsonData)
-    function handleViewMore(e) {
-        console.log(e)
-        
-    }
 
   return (
     <div>
@@ -19,7 +14,7 @@ console.log(jsonData)
             <h3>Location: {destination.location}</h3>
             <h4> Description: {destination.description} </h4>
             <NavLink to={`/${destination.id}`}>
-            <button onClick={handleViewMore}>View More</button>
+            <button>View More</button>
             </NavLink>
         </div>
         ))            

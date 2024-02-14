@@ -25,7 +25,6 @@ function App() {
     fetchData()
   },
   []);
-  console.log(jsonData)
 
   return (
     <Switch>

@@ -6,10 +6,9 @@ function Details({jsonData}) {
     // call useParams to access the `params` from the url
     const {id} = useParams();
     console.log(id)
-    console.log(jsonData)
 
-    const destinationDetails = jsonData.find( data => data.id === parseInt(id))
-    console.log(destinationDetails.services.images)
+    const destinationDetails = jsonData.find( data => parseInt(data.id) === parseInt(id))
+    console.log(destinationDetails)
 
   return (
     <div>
@@ -45,7 +44,6 @@ function Details({jsonData}) {
                 )
             })   
             }
-
 
         </div>
     </div>
