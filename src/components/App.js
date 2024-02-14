@@ -35,13 +35,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div>
         <Switch>
           <Route exact path="/">
             <Home jsonData={jsonData} />
-          </Route>
-          <Route exact path={`/:id`}>
-            <Details jsonData={jsonData}/>
           </Route>
           <Route exact path="/about">
             <About />
@@ -52,8 +48,10 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
+          <Route exact path={`/:id`}>
+            <Details jsonData={jsonData}/>
+          </Route>
         </Switch>
-      </div>
     </div>
   );
 }
