@@ -37,13 +37,15 @@ function Details({jsonData}) {
             })}
     
     {/* Map and render the array of other services */}
-            
+            <h3>We Offer The Following Services at {destinationDetails.name}</h3>
+            <ol>
             { destinationDetails.services.otherServices.map((service) => {
                 return (
-                    <p>{service}</p>
+                    <li>{service}</li>
                 )
             })   
             }
+            </ol>
 
         </div>
     </div>
