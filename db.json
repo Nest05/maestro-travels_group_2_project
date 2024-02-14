@@ -10,7 +10,12 @@
       "reviews": ["", "", "", ""],
       "services": {
         "id": 1,
-        "images": [],
+        "images": [
+          "https://rb.gy/ol5isx",
+          "https://rb.gy/lcju9x",
+          "https://rb.gy/uhixog",
+          "https://rebrand.ly/6gr1pmf"
+        ],
         "Accomodation": "",
         "other-services": []
       }
