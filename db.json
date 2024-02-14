@@ -16,9 +16,9 @@
         "reviews":["Good","Fair","Horrible","Excellent"],
         "services": {
             "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "images":["https://rb.gy/8sc8uv", "https://rb.gy/8sc8uv"],
+            "accomodation": "Available",
+            "otherServices":["Bird watching", "Game viewing", "Safari Walk" ]
         }   
       },
       {
@@ -31,8 +31,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }       
       },
       {
@@ -45,8 +45,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }     
       },
       {
@@ -59,8 +59,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }      
       },
       {
@@ -73,8 +73,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }         
       },
       {
@@ -87,8 +87,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }   
       },
       {
@@ -101,8 +101,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }   
       },
       {
@@ -115,8 +115,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }   
       },
       {
@@ -129,8 +129,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }   
       },
       {
@@ -143,8 +143,8 @@
         "services": {
             "id":1,
             "images":[],
-            "Accomodation": "",
-            "other-services":[]
+            "accomodation": "",
+            "otherServices":[]
         }   
       }
     ]
