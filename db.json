@@ -1,151 +1,189 @@
 {
-    "users": [
-        {"id":1,
-         "username": "",
-         "password": ""
-        },
-        {}
-    ],
-    "destinations": [
-      {
+  "comments": [
+    {
+      "text": "First and foremost, I was impressed by the user-friendly interface of the website. It is well-organized and easy to navigate, making it a breeze to find information on different locations in Kenya. The photos used in the site are also stunning and truly capture the beauty of the country.",
+      "likes": 3,
+      "id": 1
+    },
+    {
+      "text": "One of the things that stood out to me about Maestro Travels is the variety of destinations they feature. From the bustling city of Nairobi to the serene beaches of Mombasa, it covers a wide range of places that cater to different types of travelers. The site also provides helpful tips and recommendations for each destination, including accommodation options, activities, and local cuisine.",
+      "likes": 3,
+      "id": 2
+    },
+    {
+      "text": "I also appreciate the detailed information provided about each destination, including its history, culture, and must-see attractions. This not only helps in planning a trip but also gives a deeper understanding of the place before even setting foot there.",
+      "likes": 3,
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "ouma@maestrotravels.com",
+      "password": "Ouma2024"
+    },
+    {
+      "id": 2,
+      "username": "naomi@maestrotravels.com",
+      "password": "naomi2024"
+    },
+    {
+      "id": 3,
+      "username": "nestor@maestrotravels.com",
+      "password": "nestor2024"
+    },
+    {
+      "id": 4,
+      "username": "levis@maestrotravels.com",
+      "password": "levis2024"
+    },
+    {
+      "id": 5,
+      "username": "kimani@maestrotravels.com",
+      "password": "kimani2024"
+    },
+    {
+      "id": 6,
+      "username": "oliver@maestrotravels.com",
+      "password": "oliver2024"
+    }
+  ],
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Nairobi National Park",
+      "location": "Nairobi, Kenya",
+      "image": "https://rb.gy/8sc8uv",
+      "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
+      "reviews": [
+        "I recently had the opportunity to visit the Nairobi National Park in Kenya and I must say, it was an unforgettable experience. Located just 7 kilometers from the bustling city center, this park offers a unique and breathtaking safari experience.",
+        "One of the things that struck me the most about the Nairobi National Park is its diversity. It is home to a wide variety of wildlife including lions, rhinos, buffaloes, giraffes and many more. I was amazed to see these majestic animals roaming freely in their natural habitat, with the Nairobi skyline in the background. The park also has over 400 species of birds, making it a paradise for bird watchers.",
+        "The park is well-maintained and the roads are well-paved, making it easy to navigate and spot animals. The guided safari tour was informative and our guide was very knowledgeable about the park and its inhabitants. We were lucky enough to spot the big five (lion, leopard, elephant, buffalo, and rhino) during our visit, which was a highlight of the trip.",
+        "What sets Nairobi National Park apart from other safari parks is its conservation efforts. It is the first national park in Kenya to establish a rhino sanctuary, which has been successful in breeding and protecting the endangered species. The park also has a wildlife orphanage where orphaned animals are taken care of until they are ready to be released back into the wild."
+      ],
+      "services": {
         "id": 1,
-        "name": "Nairobi National Park",
-        "location": "Nairobi, Kenya",
-        "image": "https://rb.gy/8sc8uv",
-        "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
-        "reviews":["","","",""],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }   
-      },
-      {
-        "id": 2,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }       
-      },
-      {
-        "id": 3,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }     
-      },
-      {
-        "id": 4,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }      
-      },
-      {
-        "id": 5,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }         
-      },
-      {
-        "id": 6,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }   
-      },
-      {
-        "id": 7,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }   
-      },
-      {
-        "id": 8,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }   
-      },
-      {
-        "id": 9,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }   
-      },
-      {
-        "id": 10,
-        "name": "",
-        "location": "",
-        "image": "",
-        "description": "",
-        "reviews":[],
-        "services": {
-            "id":1,
-            "images":[],
-            "Accomodation": "",
-            "other-services":[]
-        }   
+        "images": [
+          "https://rb.gy/8sc8uv",
+          "https://rb.gy/8sc8uv",
+          "https://rb.gy/ol5isx",
+          "https://rb.gy/lcju9x",
+          "https://rb.gy/uhixog",
+          "https://rebrand.ly/6gr1pmf"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Bird watching",
+          "Game viewing",
+          "Safari Walk"
+        ]
       }
-    ]
-  }
+    },
+    {
+      "name": "Rusinga Island Lodge",
+      "tourGuide": "ouma@maestrotravels.com",
+      "location": "Homabay",
+      "image": "https://images.trvl-media.com/hotels/13000000/12750000/12748800/12748721/d7d4bdfe_z.jpg",
+      "description": "Rusinga Island Lodge, nestled on the shores of Lake Victoria, offers a tranquil retreat with an exquisite blend of natural beauty and luxury. This serene haven is renowned for its impeccable service, including lavish accommodations that promise comfort and privacy. Guests can indulge in a variety of services such as a refreshing swimming pool, gourmet dining featuring local and international cuisine, and wellness treatments in the spa. The lodge is also a gateway to adventure, offering activities like bird watching, fishing expeditions on the lake, and cultural tours to nearby villages, providing an immersive experience into the local heritage and natural splendor of the region. With its stunning lake views, lush gardens, and an array of leisure and adventure activities, Rusinga Island Lodge is the perfect destination for those seeking relaxation and a touch of adventure amidst nature's beauty.",
+      "reviews": [
+        "My stay at Rusinga Island Lodge was nothing short of magical. From the moment we arrived, we were greeted with warm smiles and breathtaking views. The accommodations were luxurious, offering comfort and serenity with each sunrise over Lake Victoria. The staff went above and beyond to ensure our stay was memorable, arranging for delightful cultural tours and exhilarating fishing trips. Dining under the stars with expertly prepared cuisine was a highlight. This lodge truly is a hidden gem.",
+        "Rusinga Island Lodge offered an unparalleled retreat into nature's embrace. The swimming pool was a refreshing oasis, and the spa treatments left me feeling rejuvenated. What stood out the most, however, was the lodge's commitment to providing an authentic experience, including the bird watching excursions which were a bird lover's dream. Each meal was a culinary adventure, blending local flavors with gourmet finesse. I left feeling deeply connected to the beauty and culture of the area.",
+        "The charm of Rusinga Island Lodge lies not just in its stunning location but in the heartfelt hospitality of its staff. The rooms provided a perfect blend of comfort and elegance, with views that seemed to stretch endlessly over Lake Victoria. The range of activities, from cultural tours to leisurely days spent by the pool, catered to all interests. However, it was the peaceful atmosphere and the sense of being at one with nature that made our stay truly unforgettable.",
+        "Our experience at Rusinga Island Lodge was exceptional. The setting is idyllic, offering serene lake views and beautifully landscaped gardens. The services were impeccable, with a special mention to the delicious dining experience and the adventurous fishing expeditions that were expertly organized by the lodge. The staff's attention to detail and the cozy, well-appointed accommodations made our visit incredibly comfortable. Rusinga Island Lodge is a sanctuary for those seeking tranquility and a touch of adventure."
+      ],
+      "services": {
+        "images": [
+          "https://www.kenyasafari.com/images/rusinga-island-lodge-exterior-590x390.jpg",
+          "https://theholidaydealers.com/wp-content/uploads/2023/04/Rusinga-Island-Lodge-31-850x540.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/13/81/66/guest-bedroom-rusinga.jpg?w=700&h=-1&s=1",
+          "https://i0.wp.com/www.scrapbookjourneys.com/wp-content/uploads/2017/01/DSC_6144-Copy.jpg?resize=1000%2C667",
+          "https://pix10.agoda.net/hotelImages/19936073/-1/239f9a12318bc1569f99fbfe05eca65a.jpg?ca=16&ce=1&s=414x232"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "swimming pool",
+          "gourmet dining featuring local and international cuisine",
+          "wellness treatments in the spa",
+          "Boat riding",
+          "Fishing"
+        ]
+      },
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Karuru Falls",
+      "location": "Aberdares",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipOAxu4HFQu8YAzyPLykTVlMb2p-x0H17Gm282Qi=s680-w680-h510",
+      "description": "Karuru Waterfalls is one of the stunning natural attractions in Kenya, situated within the Aberdare National Park. The falls are set against the backdrop of lush, pristine forest and rugged landscapes, contributing to a breathtaking and serene environment. It is known for its impressive height, with multiple cascades creating a picturesque scene. The falls are formed as the Karuru River descends over the Aberdare Range, creating a series of cascades.",
+      "reviews": [
+        "Good",
+        "Fair",
+        "Horrible",
+        "Excellent"
+      ],
+      "services": {
+        "id": 1,
+        "images": [
+          "https://lh3.googleusercontent.com/p/AF1QipN5H0HCKAEWFTmPYbhdQPAs_VGQkklaW87DgClZ=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipMj7zh3wnu7MIsrLrhlaQMpYRcaYNE-4fKr9lx9=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipMeZx3GAZsEzrP1pxef_G9xaua0CVeq6XpqIVr2=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipMq3cRsU6-lBgzggg3yEMVvYxNpDYqvJWjpzsQS=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipNIEhECAP1L3Kr8QSV5Z7d_evN34D9ZQhAFxFln=s680-w680-h510",
+          "https://media1.thrillophilia.com/filestore/ivjbiwwrb3qd7jtpyvh8h9aahccg_rainbow%20waterfalls.png?h=341&w=auto&dpr=1"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Hiking",
+          "Camping",
+          "Ziplining"
+        ]
+      }
+    },
+    {
+      "name": "Maasai Mara",
+      "tourGuide": "naomi@maestrotravels.com",
+      "location": "Narok",
+      "image": "https://www.masaimara.com/assets/img/masai-mara.jpg",
+      "description": "Maasai Mara National Reserve is an area of preserved savannah wilderness in southwestern Kenya, along the Tanzanian border. Its animals include lions, cheetahs, elephants, zebras and hippos. Wildebeest traverse its plains during their annual migration. The landscape has grassy plains and rolling hills, and is crossed by the Mara and Talek rivers. The area nearby is dotted with villages (enkangs) of Maasai people.",
+      "reviews": [
+        "The charm of Rusinga Island Lodge lies not just in its stunning location but in the heartfelt hospitality of its staff. The rooms provided a perfect blend of comfort and elegance, with views that seemed to stretch endlessly over Lake Victoria. The range of activities, from cultural tours to leisurely days spent by the pool, catered to all interests. However, it was the peaceful atmosphere and the sense of being at one with nature that made our stay truly unforgettable.",
+        "Our experience at Rusinga Island Lodge was exceptional. The setting is idyllic, offering serene lake views and beautifully landscaped gardens. The services were impeccable, with a special mention to the delicious dining experience and the adventurous fishing expeditions that were expertly organized by the lodge. The staff's attention to detail and the cozy, well-appointed accommodations made our visit incredibly comfortable. Rusinga Island Lodge is a sanctuary for those seeking tranquility and a touch of adventure."
+      ],
+      "services": {
+        "images": [
+          "https://cdn.pixabay.com/photo/2018/01/19/22/29/water-3093341_640.jpg",
+          "https://cdn.pixabay.com/photo/2022/08/13/14/30/cheetah-7383852_640.jpg"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Camping",
+          "Safari",
+          "Hot Air Balloon"
+        ]
+      },
+      "id": 4
+    },
+    {
+      "name": "Two Rivers Mall",
+      "tourGuide": "nestor@maestrotravels.com",
+      "location": "Limuru Rd Nairobi KE",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipM24F9kaBrOTFpNIPmGvSWJDjvoK_1wKBicArie=s680-w680-h510",
+      "description": "Two Rivers Mall is a shopping centre located in Nairobi, Kenya. With 67,000 sqm of gross lettable area, it is the largest shopping mall in sub-Saharan Africa outside of South Africa. It boasts a diverse range of brands ranging from local to international",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://lh3.googleusercontent.com/p/AF1QipObAJTTtJXC_6lywSf2fnTbRx1UmxPJwSVnwN3i=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipM_WULOUP2TIu_IoP9nhGAMy_YcOh46j1Cf5_Hy=s680-w680-h510"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Entertainment",
+          "Shopping",
+          "Offices"
+        ]
+      },
+      "id": 5
+    }
+  ]
+}
