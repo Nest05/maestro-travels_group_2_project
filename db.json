@@ -95,6 +95,27 @@
         ]
       },
       "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Karuru Falls",
+      "location": "Aberdares",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipOAxu4HFQu8YAzyPLykTVlMb2p-x0H17Gm282Qi=s680-w680-h510",
+      "description": "Karuru Waterfalls is one of the stunning natural attractions in Kenya, situated within the Aberdare National Park. The falls are set against the backdrop of lush, pristine forest and rugged landscapes, contributing to a breathtaking and serene environment. It is known for its impressive height, with multiple cascades creating a picturesque scene. The falls are formed as the Karuru River descends over the Aberdare Range, creating a series of cascades.",
+      "reviews": ["Good", "Fair", "Horrible", "Excellent"],
+      "services": {
+        "id": 1,
+        "images": [
+          "https://lh3.googleusercontent.com/p/AF1QipN5H0HCKAEWFTmPYbhdQPAs_VGQkklaW87DgClZ=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipMj7zh3wnu7MIsrLrhlaQMpYRcaYNE-4fKr9lx9=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipMeZx3GAZsEzrP1pxef_G9xaua0CVeq6XpqIVr2=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipMq3cRsU6-lBgzggg3yEMVvYxNpDYqvJWjpzsQS=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipNIEhECAP1L3Kr8QSV5Z7d_evN34D9ZQhAFxFln=s680-w680-h510",
+          "https://media1.thrillophilia.com/filestore/ivjbiwwrb3qd7jtpyvh8h9aahccg_rainbow%20waterfalls.png?h=341&w=auto&dpr=1"
+        ],
+        "accomodation": "Available",
+        "otherServices": ["Hiking", "Camping", "Ziplining"]
+      }
     }
   ]
 }
