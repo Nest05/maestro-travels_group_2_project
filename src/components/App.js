@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import Login from "./Login";
 import SearchBar from "./SearchBar"; 
 import { useState, useEffect } from "react";
+import "./App.css";
 
 
 function App() {
@@ -39,7 +40,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="Header">
       <Navbar />
+      </div>
       <Switch>
         <Route exact path="/">
           <Home jsonData={jsonData} />

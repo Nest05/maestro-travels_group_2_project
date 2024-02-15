@@ -6,10 +6,9 @@ function Navbar() {
   return (
     <div className="navBar">
       
-          <NavLink to={"/"} className="navBar1">Home</NavLink>
+          <NavLink to={"/"} >Home</NavLink>
         
           <NavLink to={"/about"}>About</NavLink>
-
 
           <NavLink to={"/login"}>Login</NavLink>
        

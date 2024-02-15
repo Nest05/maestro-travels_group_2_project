@@ -1,6 +1,14 @@
 .navBar {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
 }
-.navBar1{
-    list-style: none;
+.navBar a{
+    text-decoration: none;
+    margin-left: 3vw;
+    color: rgb(251, 248, 246);
+}
+.navBar a:hover{
+    color: rgb(227,188,154);
+    
 }
