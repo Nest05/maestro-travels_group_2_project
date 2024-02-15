@@ -9,9 +9,7 @@
       
 }
 body{
-    background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/13/clouds-310110_960_720.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-color: rgb(227,188,154);
 }
 span{
     color: blue;
@@ -20,6 +18,7 @@ span{
 span:hover{
     color: rgb(0, 0, 255,0.2);
 }
-h1{
-    
+img {
+    width: 20vw;
+    height: 20vh;
 }

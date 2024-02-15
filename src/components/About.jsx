@@ -1,9 +1,10 @@
 import React from "react";
-import "./About.css";
+import "./about.css";
+import Comments from "./Comments";
 
 function About() {
   return (
-    <div>
+    <div className="aboutContainer">
       <div className="about">
       <h1>About Us</h1>
       <p>
@@ -137,9 +138,11 @@ function About() {
         that await you!
       </p>
       <p>Happy Exploring!</p>
+      <Comments />
       </div>
+
     </div>
   );
 }
-
 export default About;
+

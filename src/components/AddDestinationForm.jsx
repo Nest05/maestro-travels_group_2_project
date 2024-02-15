@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import './destination.css';
+// import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/destinations";
 
 /*
@@ -7,7 +9,7 @@ const url = "http://localhost:3000/destinations";
 - Function does a POST request to the server
 - Handles failure or success of the request
 */ 
-const AddDestinationForm = () =>{
+const AddDestinationForm = ({ tourGuide }) =>{
 
     /*
     - Handle state by storing all user interactivities
@@ -16,17 +18,19 @@ const AddDestinationForm = () =>{
     const [formData, setFormData] = useState({
 
         name: "",
+        tourGuide: tourGuide,
         location: "",
         image: "",
         description: "",
         reviews:[],
         services: {
             images:[],
-            Accomodation: "",
+            accomodation: "",
             otherServices: []
         }
     })
     const [error, setError] = useState("");
+    // const [facilityGuide, setFacilityGuide] = useState(null)
 
     /*
     - Handle change by targetting the various names and values of the input
@@ -40,6 +44,7 @@ const AddDestinationForm = () =>{
         }));
     }
 
+    // Handles select change
     const handleSelectChange = event =>{
         const { name, value } = event.target;
         setFormData(prevState => ({
@@ -122,17 +127,20 @@ const AddDestinationForm = () =>{
                 body: JSON.stringify(formData)
             })
             if (response.ok){
+                // const data = await response.json();
+                // setFacilityGuide(data.tourGuide)
                 alert("Successful!");
                 setFormData({
 
                     name: "",
+                    tourGuide: "",
                     location: "",
                     image: "",
                     description: "",
                     reviews:[],
                     services: {
                         images:[],
-                        Accomodation: "",
+                        accomodation: "",
                         otherServices: []
                     }
                 })
@@ -161,7 +169,7 @@ const AddDestinationForm = () =>{
     }
 
     return (
-        <div id="add-destination-card">
+        <div className="destiny">
             <form id="add-destination" onSubmit={handleSubmit} action="submit">
                 <label className="label" htmlFor="label">Facility Name</label>
                 <br />
@@ -212,10 +220,10 @@ const AddDestinationForm = () =>{
                 </textarea>
                 <br />
                 <select 
-                    name="Accomodation" 
-                    id="Accomodation" 
+                    name="accomodation" 
+                    id="accomodation" 
                     onChange={handleSelectChange}
-                    value={formData.services.Accomodation}
+                    value={formData.services.accomodation}
                 >
                     <option value="All">Select Accomodation type</option>
                     <option value="Available">Available</option>
@@ -264,6 +272,5 @@ const AddDestinationForm = () =>{
     )
 
 }
-
 export default AddDestinationForm;
 
