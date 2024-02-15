@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/destinations";
 
 /*
@@ -7,7 +8,7 @@ const url = "http://localhost:3000/destinations";
 - Function does a POST request to the server
 - Handles failure or success of the request
 */ 
-const AddDestinationForm = () =>{
+const AddDestinationForm = ({ tourGuide }) =>{
 
     /*
     - Handle state by storing all user interactivities
@@ -16,6 +17,7 @@ const AddDestinationForm = () =>{
     const [formData, setFormData] = useState({
 
         name: "",
+        tourGuide: tourGuide,
         location: "",
         image: "",
         description: "",
@@ -27,6 +29,7 @@ const AddDestinationForm = () =>{
         }
     })
     const [error, setError] = useState("");
+    // const [facilityGuide, setFacilityGuide] = useState(null)
 
     /*
     - Handle change by targetting the various names and values of the input
@@ -40,6 +43,7 @@ const AddDestinationForm = () =>{
         }));
     }
 
+    // Handles select change
     const handleSelectChange = event =>{
         const { name, value } = event.target;
         setFormData(prevState => ({
@@ -122,10 +126,13 @@ const AddDestinationForm = () =>{
                 body: JSON.stringify(formData)
             })
             if (response.ok){
+                // const data = await response.json();
+                // setFacilityGuide(data.tourGuide)
                 alert("Successful!");
                 setFormData({
 
                     name: "",
+                    tourGuide: "",
                     location: "",
                     image: "",
                     description: "",
