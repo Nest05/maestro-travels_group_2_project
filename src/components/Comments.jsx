@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "./Comments.css"
 
 function Comments() {
   const [comments, setComments] = useState([])
@@ -12,7 +13,7 @@ function Comments() {
 
   const addComment = (newComment) => {
     // Make POST request to localhost:8001/comments
-    fetch("http://localhost:8001/comments", {
+    fetch("http://localhost:3000/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +57,7 @@ function Comments() {
 
   // Load comments from the server on component mount
   useEffect(() => {
-    fetch("http://localhost:8001/comments")
+    fetch("http://localhost:3000/comments")
       .then((response) => response.json())
       .then((commentsFromServer) => {
         setComments(commentsFromServer);
