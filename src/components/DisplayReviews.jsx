@@ -67,6 +67,6 @@ const DisplayReviews = ({ facilityGuide }) =>{
         </div>
     )
 }
-
 export default DisplayReviews
+
 

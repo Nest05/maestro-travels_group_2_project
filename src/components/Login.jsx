@@ -4,7 +4,6 @@ import DisplayReviews from "./DisplayReviews";
 import './login.css';
 const url = "http://localhost:3000/users"
 
-
 const Login = () =>{
 
 
@@ -86,6 +85,5 @@ const Login = () =>{
         </>
     )
 }
-
 export default Login
 
