@@ -38,7 +38,7 @@ function Comments() {
     updatedComments[index] = updatedComment;
 
     // Make PATCH request to update likes on the server
-    fetch(`http://localhost:8001/comments/${updatedComment.id}`, {
+    fetch(`http://localhost:3000/comments/${updatedComment.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
