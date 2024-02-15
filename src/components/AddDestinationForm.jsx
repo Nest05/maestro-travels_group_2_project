@@ -272,5 +272,5 @@ const AddDestinationForm = ({ tourGuide }) =>{
     )
 
 }
-
 export default AddDestinationForm;
+
