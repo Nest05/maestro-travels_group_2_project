@@ -10,7 +10,6 @@ function Navbar() {
         
           <NavLink to={"/about"}>About</NavLink>
 
-          <NavLink to={"/destination-form"}>Add Destination</NavLink>
 
           <NavLink to={"/login"}>Login</NavLink>
        

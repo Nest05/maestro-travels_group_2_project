@@ -5,10 +5,8 @@ function Details({jsonData}) {
 
     // call useParams to access the `params` from the url
     const {id} = useParams();
-    console.log(id)
 
     const destinationDetails = jsonData.find( data => parseInt(data.id) === parseInt(id));
-    console.log(destinationDetails)
 
   return (
     <div className="about">

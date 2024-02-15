@@ -3,10 +3,11 @@ import Details from "./Details";
 import Home from "./Home";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar";
-import AddDestinationForm from "./AddDestinationForm";
+// import AddDestinationForm from "./AddDestinationForm";
 import Login from "./Login";
 import SearchBar from "./SearchBar"; 
 import { useState, useEffect } from "react";
+
 
 function App() {
   const [jsonData, setJsonData] = useState([]);
@@ -46,14 +47,11 @@ function App() {
         <Route exact path="/about">
           <About />
         </Route>
-        <Route exact path="/destination-form">
-          <AddDestinationForm />
-        </Route>
         <Route exact path="/login">
           <Login />
         </Route>
         <Route exact path={`/:id`}>
-          <Details jsonData={jsonData} />
+          <Details jsonData={filteredData} />
         </Route>
         <Route exact path="/:id">
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />

@@ -39,10 +39,10 @@ const DisplayReviews = ({ facilityGuide }) =>{
         fetchReviews()
 
         // Fetch the reviews after every 10 seconds
-        const interval = setInterval(fetchReviews, 20000);
+        // const interval = setInterval(fetchReviews, 20000);
 
-        // Clean the interval to avoid memory leaks
-        return () => clearInterval(interval)
+        // // Clean the interval to avoid memory leaks
+        // return () => clearInterval(interval)
     }, [facilityGuide])
 
     return (
