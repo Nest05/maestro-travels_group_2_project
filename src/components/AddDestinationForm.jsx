@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/destinations";
 
 /*
@@ -7,7 +8,7 @@ const url = "http://localhost:3000/destinations";
 - Function does a POST request to the server
 - Handles failure or success of the request
 */ 
-const AddDestinationForm = () =>{
+const AddDestinationForm = ({ tourGuide }) =>{
 
     /*
     - Handle state by storing all user interactivities
@@ -16,6 +17,7 @@ const AddDestinationForm = () =>{
     const [formData, setFormData] = useState({
 
         name: "",
+        tourGuide: tourGuide,
         location: "",
         image: "",
         description: "",
@@ -27,6 +29,7 @@ const AddDestinationForm = () =>{
         }
     })
     const [error, setError] = useState("");
+    // const [facilityGuide, setFacilityGuide] = useState(null)
 
     /*
     - Handle change by targetting the various names and values of the input
@@ -40,6 +43,7 @@ const AddDestinationForm = () =>{
         }));
     }
 
+    // Handles select change
     const handleSelectChange = event =>{
         const { name, value } = event.target;
         setFormData(prevState => ({
@@ -122,7 +126,23 @@ const AddDestinationForm = () =>{
                 body: JSON.stringify(formData)
             })
             if (response.ok){
+                // const data = await response.json();
+                // setFacilityGuide(data.tourGuide)
                 alert("Successful!");
+                setFormData({
+
+                    name: "",
+                    tourGuide: "",
+                    location: "",
+                    image: "",
+                    description: "",
+                    reviews:[],
+                    services: {
+                        images:[],
+                        Accomodation: "",
+                        otherServices: []
+                    }
+                })
             }else{
                 throw new Error("Failed to post data!");
             }
@@ -133,7 +153,8 @@ const AddDestinationForm = () =>{
         }
     }
     // Checks if all input areas are filled before submitting data
-    const handleSubmit = () =>{
+    const handleSubmit = event =>{
+        event.preventDefault();
         if (formData.name.length > 0 &&
             formData.location.length > 0 &&
             formData.image.length > 0 &&
@@ -147,107 +168,106 @@ const AddDestinationForm = () =>{
     }
 
     return (
-        <form id="add-destination" onSubmit={handleSubmit} action="submit">
-            <label className="label" htmlFor="label">Facility Name</label>
-            <br />
-            <input 
-                className="add-destination-form"
-                type="text" 
-                name="name" 
-                value={formData.name} 
-                onChange={handleChange} 
-                placeholder="Enter facility name" 
-            />
-            <br />
-            <label className="label" htmlFor="label">Facility Location</label>
-            <br />
-            <input 
-                className="add-destination-form"
-                type="text" 
-                name="location" 
-                value={formData.location} 
-                onChange={handleChange} 
-                placeholder="Enter facility's location" 
-            />
-            <br />
-            <label className="label" htmlFor="label">Facility Image</label>
-            <br />
-            <input 
-                className="add-destination-form"
-                type="text" 
-                name="image" 
-                value={formData.image} 
-                onChange={handleChange} 
-                placeholder="Enter facility's image" 
-            />
-            <br />
-            <label className="label" htmlFor="label">Facility Image</label>
-            <br />
-            <textarea  
-                style={{
-                    resize: "vertical",
-                    minHeight: "100px"
-                }}
-                id="text-area" 
-                placeholder="Enter your facility description"
-                name="description"
-                value={formData.description}
-                onChange={handleChange}
-            >
-
-            </textarea>
-            <br />
-            <select 
-                name="Accomodation" 
-                id="Accomodation" 
-                onChange={handleSelectChange}
-                value={formData.services.Accomodation}
-            >
-                <option value="All">Select Accomodation type</option>
-                <option value="Available">Available</option>
-                <option value="Unavailable">Unavailable</option>
-            </select>
-            <br />
-            {formData.services.images.map((image, index) => (
-                <div key={index}>
-                    <label className="label" htmlFor={`image-${index}`}>Facility Image {index + 1}</label>
-                    <br />
-                    <input
-                        className="add-destination-form"
-                        type="text"
-                        id={`image-${index}`}
-                        name={`image-${index}`}
-                        value={image}
-                        onChange={e => handleImageChange(index, e.target.value)}
-                        placeholder="Enter facility's image"
-                    />
-                </div>
-            ))}
-            <br />
-            {/* Button to dynamically add more images */}
-            <button type="button" onClick={handleAddImage}>Add Image</button>
-            <br />
-            {formData.services.otherServices.map((service, index) => (
-                <div key={index}>
-                    <label className="label" htmlFor={`otherServices-${index}`}>Facility Sevices {index + 1}</label>
-                    <br />
-                    <input
-                        className="add-destination-form"
-                        type="text"
-                        id={`otherServices-${index}`}
-                        name={`otherServices-${index}`}
-                        value={service}
-                        onChange={e => handleServiceChange(index, e.target.value)}
-                        placeholder="Enter facility's other services"
-                    />
-                </div>
-            ))}
-            {/* Button to dynamically add more images */}
-            <button type="button" onClick={handleAddService}>Add Service</button>
-            <br />
-            {error && <p style={{ color: "red" }}>{error}</p>}
-            <button type="submit">Submit</button>
-        </form>
+        <div className="about">
+            <form id="add-destination" onSubmit={handleSubmit} action="submit">
+                <label className="label" htmlFor="label">Facility Name</label>
+                <br />
+                <input 
+                    className="add-destination-form"
+                    type="text" 
+                    name="name" 
+                    value={formData.name} 
+                    onChange={handleChange} 
+                    placeholder="Enter facility name" 
+                />
+                <br />
+                <label className="label" htmlFor="label">Facility Location</label>
+                <br />
+                <input 
+                    className="add-destination-form"
+                    type="text" 
+                    name="location" 
+                    value={formData.location} 
+                    onChange={handleChange} 
+                    placeholder="Enter facility's location" 
+                />
+                <br />
+                <label className="label" htmlFor="label">Facility Image</label>
+                <br />
+                <input 
+                    className="add-destination-form"
+                    type="text" 
+                    name="image" 
+                    value={formData.image} 
+                    onChange={handleChange} 
+                    placeholder="Enter facility's image" 
+                />
+                <br />
+                <label className="label" htmlFor="label">Facility Description</label>
+                <br />
+                <textarea  
+                    style={{
+                        resize: "vertical",
+                        minHeight: "100px"
+                    }}
+                    id="text-area" 
+                    placeholder="Enter your facility description"
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
+                >
+                </textarea>
+                <br />
+                <select 
+                    name="Accomodation" 
+                    id="Accomodation" 
+                    onChange={handleSelectChange}
+                    value={formData.services.Accomodation}
+                >
+                    <option value="All">Select Accomodation type</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                </select>
+                <br />
+                {formData.services.images.map((image, index) => (
+                    <div key={index}>
+                        <label className="label" htmlFor={`image-${index}`}>Facility Image {index + 1}</label>
+                        <br />
+                        <input
+                            className="add-destination-form"
+                            type="text"
+                            id={`image-${index}`}
+                            name={`image-${index}`}
+                            value={image}
+                            onChange={e => handleImageChange(index, e.target.value)}
+                            placeholder="Enter facility's image"
+                        />
+                    </div>
+                ))}
+                <br />
+                <button type="button" onClick={handleAddImage}>Add Image</button>
+                <br />
+                {formData.services.otherServices.map((service, index) => (
+                    <div key={index}>
+                        <label className="label" htmlFor={`otherServices-${index}`}>Facility Sevices {index + 1}</label>
+                        <br />
+                        <input
+                            className="add-destination-form"
+                            type="text"
+                            id={`otherServices-${index}`}
+                            name={`otherServices-${index}`}
+                            value={service}
+                            onChange={e => handleServiceChange(index, e.target.value)}
+                            placeholder="Enter facility's other services"
+                        />
+                    </div>
+                ))}
+                <button type="button" onClick={handleAddService}>Add Service</button>
+                <br />
+                {error && <p style={{ color: "red" }}>{error}</p>}
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     )
 
 }
