@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from "react";
+import './review.css'
 const url = "http://localhost:3000/destinations"
 
 /*
@@ -39,14 +40,14 @@ const DisplayReviews = ({ facilityGuide }) =>{
         fetchReviews()
 
         // Fetch the reviews after every 10 seconds
-        const interval = setInterval(fetchReviews, 20000);
+        // const interval = setInterval(fetchReviews, 20000);
 
-        // Clean the interval to avoid memory leaks
-        return () => clearInterval(interval)
+        // // Clean the interval to avoid memory leaks
+        // return () => clearInterval(interval)
     }, [facilityGuide])
 
     return (
-        <div>
+        <div className="review">
             <h3>Reviews</h3>
                 {isLoading 
                 ?(
@@ -66,6 +67,6 @@ const DisplayReviews = ({ facilityGuide }) =>{
         </div>
     )
 }
-
 export default DisplayReviews
+
 

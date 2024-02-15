@@ -3,7 +3,7 @@ import React from "react";
 const SearchBar = ({ searchTerm, setSearchTerm }) =>{
     return (
         <div id="search">
-        <label>Search transaction by description:</label>
+        <label>Search destination:</label>
         <br/>
         <input
           type="text"

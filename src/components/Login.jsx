@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AddDestinationForm from "./AddDestinationForm";
 import DisplayReviews from "./DisplayReviews";
+import './login.css';
 
 const url = "http://localhost:3000/users";
 const INACTIVE_TIMEOUT = 120000; // 2 minutes in milliseconds
@@ -104,6 +105,7 @@ const Login = () => {
   }, []);
 
   return (
+    <div className="login">
     <div>
       {!isLoggedIn ? (
         <div>
@@ -128,6 +130,7 @@ const Login = () => {
           {loginError && <p style={{ color: "red" }}>{loginError}</p>}
           <button onClick={confirmPassword}>Continue</button>
         </div>
+      </div>
       ) : (
         <>
           <button onClick={handleLogout}>Logout</button>
