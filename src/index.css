@@ -20,6 +20,7 @@ span{
 span:hover{
     color: rgb(0, 0, 255,0.2);
 }
-h1{
-    
+img {
+    width: 20vw;
+    height: 20vh;
 }

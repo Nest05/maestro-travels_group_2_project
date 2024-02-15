@@ -7,10 +7,6 @@ import AddDestinationForm from "./AddDestinationForm";
 import Login from "./Login";
 import SearchBar from "./SearchBar"; 
 import { useState, useEffect } from "react";
-import { DiAptana } from "react-icons/di";
-import { FiMenu } from "react-icons/fi";
-
-const y = 10;
 
 function App() {
   const [jsonData, setJsonData] = useState([]);
