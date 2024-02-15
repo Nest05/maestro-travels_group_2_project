@@ -46,7 +46,7 @@ const Login = () =>{
         }
     }
     return (
-        <div>
+        <>
             {!isLoggedIn ?
                 (<div className="login">
                 <div>
@@ -83,7 +83,7 @@ const Login = () =>{
                 </>
             )
             }
-        </div>
+        </>
     )
 }
 

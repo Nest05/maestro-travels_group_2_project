@@ -1,4 +1,35 @@
 .destiny{
     margin-top: 11vh;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.destiny button{
+    width: 18vw;
+    background-color: rgb(240, 248, 255, 0.4);
+    height: 5vh;
+    border-radius: 40px;
+    margin-bottom: 3vh;
+    border: 0cap;
+}
+.destiny input{
+    width: 18vw;
+    background-color: rgb(240, 248, 255, 0.4);
+    height: 5vh;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 3vh;
+    border: 0cap;
+}
+.destiny select{
+    width: 18vw;
+    background-color: rgb(240, 248, 255, 0.4);
+    height: 5vh;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 3vh;
+    border: 0cap;
+}
+.destiny textarea{
+    background-color: rgb(240, 248, 255, 0.4);
+} 

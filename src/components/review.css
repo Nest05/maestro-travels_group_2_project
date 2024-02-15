@@ -1,7 +1,8 @@
 .review{
-    /* width: 30vw; */
+    width: 60vw;
+    text-align: center;
+    margin-left: 15vw;
     /* max-height: 60vh; */
     /* overflow: auto; */
-    /* margin-top: 40vh; */
-    /* margin-left: -10vw; */
+    
 }

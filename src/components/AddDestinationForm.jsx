@@ -169,7 +169,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
     }
 
     return (
-        <div className="about destiny">
+        <div className="destiny">
             <form id="add-destination" onSubmit={handleSubmit} action="submit">
                 <label className="label" htmlFor="label">Facility Name</label>
                 <br />
