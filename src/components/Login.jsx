@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import AddDestinationForm from "./AddDestinationForm";
 import DisplayReviews from "./DisplayReviews"; 
 import './login.css';
-const url = "http://localhost:3000/users"
+const url = "http://localhost:1000/users"
 
 
 const Login = () =>{
@@ -49,7 +49,7 @@ const Login = () =>{
         <div className="login">
             {!isLoggedIn ?
                 (<div>
-                <h3>Sign in</h3>
+                <h1>Sign in</h1>
                 <h4>to continue to Add Destination</h4>
                 <label htmlFor="login"></label>
                 <br />
@@ -72,7 +72,7 @@ const Login = () =>{
                 />
                 <br />
                 {loginError && <p style={{color: "red"}}>{loginError}</p>}
-                <button onClick={confirmPassword}>Continue</button>
+                <button onClick={confirmPassword}>Login</button>
             </div>
             ):(
                 <>

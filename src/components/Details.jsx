@@ -24,7 +24,7 @@ function Details({jsonData}) {
         </ul>
         <div>
             <h3>Services</h3>
-            <h4>Accomodation: {destinationDetails && destinationDetails.services.accomodation}</h4>
+            <h4>Accomodation: {destinationDetails && destinationDetails.services.Accomodation}</h4>
     {/* Map and render the array of images */}
             { destinationDetails && destinationDetails.services.images.map((image) => {
                 return (
