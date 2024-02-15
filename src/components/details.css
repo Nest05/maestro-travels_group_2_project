@@ -1,3 +1,9 @@
-.about{
+.detail{
     margin-top: 11vh;
+    width: 50vw;
+  text-align: center;
+  margin-left: 25vw;
+}
+li{
+    list-style: none;
 }

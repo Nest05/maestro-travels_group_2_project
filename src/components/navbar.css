@@ -1,14 +1,15 @@
 .navBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 .navBar a{
     text-decoration: none;
-    margin-left: 3vw;
+    margin-left: 10vw;
     color: rgb(251, 248, 246);
     display: inline block;
     padding-bottom: 0.5vh;
+    /* margin-right: 5vw; */
 }
 .navBar a:hover{
     color: rgb(227,188,154);

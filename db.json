@@ -56,10 +56,10 @@
       "image": "https://rb.gy/8sc8uv",
       "description": "Nairobi National Park is a national park in Kenya that was established in 1946 about 7 km south of Nairobi. It is fenced on three sides, whereas the open southern boundary allows migrating wildlife to move between the park and the adjacent Kitengela plains. Herbivores gather in the park during the dry season.",
       "reviews": [
-        "Good",
-        "Fair",
-        "Horrible",
-        "Excellent"
+        "I recently had the opportunity to visit the Nairobi National Park in Kenya and I must say, it was an unforgettable experience. Located just 7 kilometers from the bustling city center, this park offers a unique and breathtaking safari experience.",
+        "One of the things that struck me the most about the Nairobi National Park is its diversity. It is home to a wide variety of wildlife including lions, rhinos, buffaloes, giraffes and many more. I was amazed to see these majestic animals roaming freely in their natural habitat, with the Nairobi skyline in the background. The park also has over 400 species of birds, making it a paradise for bird watchers.",
+        "The park is well-maintained and the roads are well-paved, making it easy to navigate and spot animals. The guided safari tour was informative and our guide was very knowledgeable about the park and its inhabitants. We were lucky enough to spot the big five (lion, leopard, elephant, buffalo, and rhino) during our visit, which was a highlight of the trip.",
+        "What sets Nairobi National Park apart from other safari parks is its conservation efforts. It is the first national park in Kenya to establish a rhino sanctuary, which has been successful in breeding and protecting the endangered species. The park also has a wildlife orphanage where orphaned animals are taken care of until they are ready to be released back into the wild."
       ],
       "services": {
         "id": 1,
@@ -99,7 +99,7 @@
           "https://i0.wp.com/www.scrapbookjourneys.com/wp-content/uploads/2017/01/DSC_6144-Copy.jpg?resize=1000%2C667",
           "https://pix10.agoda.net/hotelImages/19936073/-1/239f9a12318bc1569f99fbfe05eca65a.jpg?ca=16&ce=1&s=414x232"
         ],
-        "Accomodation": "Available",
+        "accomodation": "Available",
         "otherServices": [
           "swimming pool",
           "gourmet dining featuring local and international cuisine",
@@ -155,7 +155,7 @@
           "https://cdn.pixabay.com/photo/2018/01/19/22/29/water-3093341_640.jpg",
           "https://cdn.pixabay.com/photo/2022/08/13/14/30/cheetah-7383852_640.jpg"
         ],
-        "Accomodation": "Available",
+        "accomodation": "Available",
         "otherServices": [
           "Camping",
           "Safari",
@@ -163,6 +163,27 @@
         ]
       },
       "id": 4
+    },
+    {
+      "name": "Two Rivers Mall",
+      "tourGuide": "nestor@maestrotravels.com",
+      "location": "Limuru Rd Nairobi KE",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipM24F9kaBrOTFpNIPmGvSWJDjvoK_1wKBicArie=s680-w680-h510",
+      "description": "Two Rivers Mall is a shopping centre located in Nairobi, Kenya. With 67,000 sqm of gross lettable area, it is the largest shopping mall in sub-Saharan Africa outside of South Africa. It boasts a diverse range of brands ranging from local to international",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://lh3.googleusercontent.com/p/AF1QipObAJTTtJXC_6lywSf2fnTbRx1UmxPJwSVnwN3i=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipM_WULOUP2TIu_IoP9nhGAMy_YcOh46j1Cf5_Hy=s680-w680-h510"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Entertainment",
+          "Shopping",
+          "Offices"
+        ]
+      },
+      "id": 5
     }
   ]
 }

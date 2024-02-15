@@ -25,7 +25,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
         reviews:[],
         services: {
             images:[],
-            Accomodation: "",
+            accomodation: "",
             otherServices: []
         }
     })
@@ -140,7 +140,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
                     reviews:[],
                     services: {
                         images:[],
-                        Accomodation: "",
+                        accomodation: "",
                         otherServices: []
                     }
                 })
@@ -220,10 +220,10 @@ const AddDestinationForm = ({ tourGuide }) =>{
                 </textarea>
                 <br />
                 <select 
-                    name="Accomodation" 
-                    id="Accomodation" 
+                    name="accomodation" 
+                    id="accomodation" 
                     onChange={handleSelectChange}
-                    value={formData.services.Accomodation}
+                    value={formData.services.accomodation}
                 >
                     <option value="All">Select Accomodation type</option>
                     <option value="Available">Available</option>
