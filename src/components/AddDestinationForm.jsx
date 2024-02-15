@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './destination.css';
 // import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/destinations";
 
@@ -24,7 +25,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
         reviews:[],
         services: {
             images:[],
-            Accomodation: "",
+            accomodation: "",
             otherServices: []
         }
     })
@@ -139,7 +140,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
                     reviews:[],
                     services: {
                         images:[],
-                        Accomodation: "",
+                        accomodation: "",
                         otherServices: []
                     }
                 })
@@ -168,7 +169,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
     }
 
     return (
-        <div className="about">
+        <div className="destiny">
             <form id="add-destination" onSubmit={handleSubmit} action="submit">
                 <label className="label" htmlFor="label">Facility Name</label>
                 <br />
@@ -219,10 +220,10 @@ const AddDestinationForm = ({ tourGuide }) =>{
                 </textarea>
                 <br />
                 <select 
-                    name="Accomodation" 
-                    id="Accomodation" 
+                    name="accomodation" 
+                    id="accomodation" 
                     onChange={handleSelectChange}
-                    value={formData.services.Accomodation}
+                    value={formData.services.accomodation}
                 >
                     <option value="All">Select Accomodation type</option>
                     <option value="Available">Available</option>

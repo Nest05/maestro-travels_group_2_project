@@ -7,6 +7,9 @@ import Navbar from "./Navbar";
 import Login from "./Login";
 import SearchBar from "./SearchBar"; 
 import { useState, useEffect } from "react";
+import "./app.css";
+import { NavLink } from 'react-router-dom'
+import AddDestinationForm from "./AddDestinationForm";
 
 
 function App() {
@@ -37,9 +40,23 @@ function App() {
     );
   });
 
+  window.addEventListener('scroll', function() {
+    let header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
   return (
     <div className="App">
+      <header className="header">
+      <NavLink to={'/'} >
+      <h2>Maestro Travels</h2>
+      </NavLink>
       <Navbar />
+      </header>
       <Switch>
         <Route exact path="/">
           <Home jsonData={jsonData} />
@@ -49,6 +66,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/destination_form">
+          <AddDestinationForm />
         </Route>
         <Route exact path={`/:id`}>
           <Details jsonData={filteredData} />

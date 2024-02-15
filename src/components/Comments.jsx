@@ -38,7 +38,7 @@ function Comments() {
     updatedComments[index] = updatedComment;
 
     // Make PATCH request to update likes on the server
-    fetch(`http://localhost:8001/comments/${updatedComment.id}`, {
+    fetch(`http://localhost:3000/comments/${updatedComment.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -68,7 +68,7 @@ function Comments() {
   }, []);
 
   return (
-    <div><h3>Leave a Comment</h3>
+    <div className='commentContainer'><h3>Leave a Comment</h3>
     <form onSubmit={handleSubmit}>
       <textarea name="comment" placeholder="Type your comment here..." required />
       <button type="submit">Submit</button>
@@ -80,8 +80,8 @@ function Comments() {
         <div key={index} className="comment">
           <p>{comment.text}</p>
           <div className="like-section">
-            <span>{comment.likes} likes</span>
-            <button onClick={() => likeComment(index)}>👍 Like</button>
+            {/* <span>{comment.likes} likes</span> */}
+            <button onClick={() => likeComment(index)}>👍 Like {comment.likes}</button>
           </div>
         </div>
       ))}
