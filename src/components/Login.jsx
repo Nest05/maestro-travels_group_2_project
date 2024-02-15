@@ -105,10 +105,12 @@ const Login = () => {
   }, []);
 
   return (
-    <div className="login">
-    <div>
+    <div >
       {!isLoggedIn ? (
-        <div>
+        <div className="login">
+          <div>
+          <h1>Sign in</h1>
+          <h4>to continue to Add Destination</h4>
           <label htmlFor="login"></label>
           <br />
           <input
@@ -129,11 +131,11 @@ const Login = () => {
           <br />
           {loginError && <p style={{ color: "red" }}>{loginError}</p>}
           <button onClick={confirmPassword}>Continue</button>
+          </div>
         </div>
-      </div>
       ) : (
         <>
-          <button onClick={handleLogout}>Logout</button>
+          <button onClick={handleLogout} className="logout">Logout</button>
           <AddDestinationForm tourGuide={userData.tourGuide} />
           <DisplayReviews facilityGuide={userData.tourGuide} /> 
         </>
