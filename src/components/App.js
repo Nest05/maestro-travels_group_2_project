@@ -9,6 +9,7 @@ import SearchBar from "./SearchBar";
 import { useState, useEffect } from "react";
 import "./app.css";
 import { NavLink } from 'react-router-dom'
+import AddDestinationForm from "./AddDestinationForm";
 
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/destination_form">
+          <AddDestinationForm />
         </Route>
         <Route exact path={`/:id`}>
           <Details jsonData={filteredData} />

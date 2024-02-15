@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import './details.css'
+import './review.css'
 const url = "http://localhost:3000/destinations"
 
 /*
@@ -47,7 +47,7 @@ const DisplayReviews = ({ facilityGuide }) =>{
     }, [facilityGuide])
 
     return (
-        <div>
+        <div className="review">
             <h3>Reviews</h3>
                 {isLoading 
                 ?(
