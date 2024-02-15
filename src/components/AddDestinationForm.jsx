@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './destination.css';
 // import DisplayReviews from "./DisplayReviews";
 const url = "http://localhost:3000/destinations";
 
@@ -168,7 +169,7 @@ const AddDestinationForm = ({ tourGuide }) =>{
     }
 
     return (
-        <div className="about">
+        <div className="about destiny">
             <form id="add-destination" onSubmit={handleSubmit} action="submit">
                 <label className="label" htmlFor="label">Facility Name</label>
                 <br />

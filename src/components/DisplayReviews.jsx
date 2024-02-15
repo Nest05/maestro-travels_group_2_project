@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from "react";
+import './details.css'
 const url = "http://localhost:3000/destinations"
 
 /*

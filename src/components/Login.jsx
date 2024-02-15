@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
 import AddDestinationForm from "./AddDestinationForm";
 import DisplayReviews from "./DisplayReviews"; 
+import './login.css';
 const url = "http://localhost:3000/users"
+
 
 const Login = () =>{
 
@@ -44,23 +46,27 @@ const Login = () =>{
         }
     }
     return (
-        <div>
+        <div className="login">
             {!isLoggedIn ?
                 (<div>
+                <h3>Sign in</h3>
+                <h4>to continue to Add Destination</h4>
                 <label htmlFor="login"></label>
                 <br />
+                <h5>Email:</h5>
                 <input 
                     name="tourGuide"
                     type="text" 
-                    placeholder="Enter username"
+                    placeholder="Enter email"
                     value={userData.tourGuide} 
                     onChange={handleChange}
                 />
                 <br />
+                <h5>Password:</h5>
                 <input 
                     name="password"
                     type="password" 
-                    placeholder="Enter username" 
+                    placeholder="Enter password" 
                     value={userData.password}
                     onChange={handleChange} 
                 />

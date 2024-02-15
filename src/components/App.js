@@ -7,7 +7,8 @@ import Navbar from "./Navbar";
 import Login from "./Login";
 import SearchBar from "./SearchBar"; 
 import { useState, useEffect } from "react";
-import "./App.css";
+import "./app.css";
+import { NavLink } from 'react-router-dom'
 
 
 function App() {
@@ -38,11 +39,23 @@ function App() {
     );
   });
 
+  window.addEventListener('scroll', function() {
+    let header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
   return (
     <div className="App">
-      <div className="Header">
+      <header className="header">
+      <NavLink to={'/'} >
+      <h2>Maestro Travels</h2>
+      </NavLink>
       <Navbar />
-      </div>
+      </header>
       <Switch>
         <Route exact path="/">
           <Home jsonData={jsonData} />

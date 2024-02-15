@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './home.css'
 
 function Home({jsonData}) {
    
 
   return (
-    <div>
+    <div className='home'>
         {
         jsonData.map( destination => (
         <div key={destination.id} className="about">

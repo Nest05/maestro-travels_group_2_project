@@ -7,8 +7,11 @@
     text-decoration: none;
     margin-left: 3vw;
     color: rgb(251, 248, 246);
+    display: inline block;
+    padding-bottom: 0.5vh;
 }
 .navBar a:hover{
     color: rgb(227,188,154);
+    border-bottom: 1px solid;
     
 }
