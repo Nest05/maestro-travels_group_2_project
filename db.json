@@ -184,6 +184,94 @@
         ]
       },
       "id": 5
+    },
+    {
+      "name": "Kakamega Forest",
+      "tourGuide": "kimani@maestrotravels.com",
+      "location": "Kakamega",
+      "image": "https://rb.gy/mhpygj",
+      "description": "Kakamega Forest is a mid-altitude tropical rainforest, the easternmost outlier of the Congo Basin forests. Its West African affinities are unique in Kenya, and the forest contains many species found nowhere else in the country. The forest lies in the Lake Victoria catchment, about 40 km north of Kisumu, and just west of the Nandi Escarpment that forms the edge of the central highlands.",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://rb.gy/mhpygj",
+          "https://rb.gy/xbh1m7"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Bird watching",
+          "Game Viewing",
+          "Fishing",
+          "Nature Walks"
+        ]
+      },
+      "id": 6
+    },
+    {
+      "name": "Hyrax Hill Museum",
+      "tourGuide": "kimani@maestrotravels.com",
+      "location": "Nakuru",
+      "image": "https://pbs.twimg.com/media/Did0Dz1XcAAADym.jpg",
+      "description": "Hyrax Hill is composed of several habitation hollows believed to have been inhabited by the Sirikwa pastoral group who were later assimilated to the Kalenjin. The site was discovered by a colonial farmer, Mrs. Selfe, in the year 1920 and opened to the public in 1965 under the National Museums of Kenya.",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://pbs.twimg.com/media/Did0Dz1XcAAADym.jpg",
+          "https://heregoeskenya.com/wp-content/uploads/2021/04/Neolithic-Site-Hyrax-Hill-Prehistoric-Site-and-Museum-in-Nakuru-Kenya.jpg"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Bird watching",
+          "View Open Archaeological Sites",
+          "Nature Walks"
+        ]
+      },
+      "id": 7
+    },
+    {
+      "name": "Lake Nakuru",
+      "tourGuide": "kimani@maestrotravels.com",
+      "location": "Nakuru",
+      "image": "https://blog.goway.com/globetrotting/wp-content/uploads/2015/04/Lake-Nakuru-Kenya.jpg",
+      "description": "Hyrax Hill is composed of several habitation hollows believed to have been inhabited by the Sirikwa pastoral group who were later assimilated to the Kalenjin. The site was discovered by a colonial farmer, Mrs. Selfe, in the year 1920 and opened to the public in 1965 under the National Museums of Kenya.",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://blog.goway.com/globetrotting/wp-content/uploads/2015/04/Lake-Nakuru-Kenya.jpg",
+          "https://www.amboseliparkkenya.com/wp-content/uploads/2020/12/Attractions-in-Lake-Nakuru-National-Park.jpg"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Bird watching",
+          "Game Drives",
+          "Camping",
+          "Nature Walks"
+        ]
+      },
+      "id": 8
+    },
+    {
+      "name": "Lewa Wildlife Conservancy",
+      "tourGuide": "kimani@maestrotravels.com",
+      "location": "Isiolo",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/06/4b/ef/62/mt-kenya-view-from-lewa.jpg",
+      "description": "The Lewa Wildlife Conservancy is located in northern Kenya. It was formed in 1995 and is a wildlife sanctuary incorporating the Ngare Ndare Forest covering over 62,000 acres. The Conservancy is home to a wide variety of wildlife including the rare and endangered black rhinos, Grevy's zebras and sitatungas.",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Acinonyx_jubatus-Lewa_game_park_%28Kenya%29.jpg/220px-Acinonyx_jubatus-Lewa_game_park_%28Kenya%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Giraffa_camelopardalis-Lewa_Kenya.jpg/220px-Giraffa_camelopardalis-Lewa_Kenya.jpg",
+          "https://media-cdn.tripadvisor.com/media/photo-s/06/4b/ef/62/mt-kenya-view-from-lewa.jpg"
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Bird watching",
+          "Game Drives",
+          "Camping",
+          "Nature Walks"
+        ]
+      },
+      "id": 8
     }
   ]
 }
