@@ -24,7 +24,6 @@ function App() {
           throw new Error("Database Network Error");
         }
         const myJsonData = await response.json();
-        console.log(myJsonData);
         setJsonData(myJsonData);
       } catch (error) {
         console.error("Error Fetching...", error);
