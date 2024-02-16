@@ -1,10 +1,17 @@
-.destiny{
-    margin-top: 1vh;
+#destiny{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2018/11/01/05/33/nature-3787200_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
-.destiny button{
+#destiny form{
+    padding-top: 25vh;
+}
+#destiny button{
     width: 18vw;
     background-color: rgb(240, 248, 255, 0.4);
     height: 5vh;
@@ -12,7 +19,7 @@
     margin-bottom: 3vh;
     border: 0cap;
 }
-.destiny input{
+#destiny input{
     width: 18vw;
     background-color: rgb(240, 248, 255, 0.4);
     height: 5vh;
@@ -21,7 +28,7 @@
     margin-bottom: 3vh;
     border: 0cap;
 }
-.destiny select{
+#destiny select{
     width: 18vw;
     background-color: rgb(240, 248, 255, 0.4);
     height: 5vh;
@@ -30,6 +37,7 @@
     margin-bottom: 3vh;
     border: 0cap;
 }
-.destiny textarea{
+#destiny textarea{
+    margin-top: 3vh;
     background-color: rgb(240, 248, 255, 0.4);
 } 

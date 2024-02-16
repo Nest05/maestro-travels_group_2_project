@@ -37,6 +37,14 @@ h3{
   color: brown;
 }
 h1{
-  color: brown;
+  color: white;
 }
 
+.about p{
+  font-weight: 900;
+  font-size: large;
+}
+.about li{
+  font-weight: 900;
+  font-size: large;
+}

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import AddDestinationForm from "./AddDestinationForm";
 // import DisplayReviews from "./DisplayReviews";
 import DisplayReviews from "./DisplayReviews";
 import './login.css';
 
 const url = "http://localhost:3000/users";
-const INACTIVE_TIMEOUT = 120000; // 2 minutes in milliseconds
+const INACTIVE_TIMEOUT = 20000; // 2 minutes in milliseconds
 
 const Login = () => {
   const [users, setUsers] = useState([]);
@@ -49,50 +49,19 @@ const Login = () => {
   }, []);
 
   useEffect(() => {
-    let logoutTimer;
+    const checkLoginStatus = () => {
+      const storedTourGuide = localStorage.getItem("tourGuide");
+      const storedLastActivityTime = localStorage.getItem("lastActivityTime");
 
-    const checkActivity = () => {
-      const lastActivityTime = localStorage.getItem("lastActivityTime");
-      if (lastActivityTime) {
-        const inactiveDuration = Date.now() - parseInt(lastActivityTime);
-        if (inactiveDuration >= INACTIVE_TIMEOUT) {
-          handleLogout();
-        } else {
-          // Reset the logout timer
-          clearTimeout(logoutTimer);
-          logoutTimer = setTimeout(handleLogout, INACTIVE_TIMEOUT - inactiveDuration);
+      if (storedTourGuide && storedLastActivityTime) {
+        const inactiveDuration = Date.now() - parseInt(storedLastActivityTime);
+        if (inactiveDuration < INACTIVE_TIMEOUT) {
+          setIsLoggedIn(true);
         }
       }
     };
 
-    const storedTourGuide = localStorage.getItem("tourGuide");
-    if (storedTourGuide) {
-      setUserData((prevData) => ({
-        ...prevData,
-        tourGuide: storedTourGuide 
-      }));
-    }
-
-    const storedLastActivityTime = localStorage.getItem("lastActivityTime");
-    if (storedLastActivityTime) {
-      const inactiveDuration = Date.now() - parseInt(storedLastActivityTime);
-      if (inactiveDuration < INACTIVE_TIMEOUT) {
-        setIsLoggedIn(true);
-        // Set the logout timer
-        logoutTimer = setTimeout(handleLogout, INACTIVE_TIMEOUT - inactiveDuration);
-      }
-    }
-
-    const activityInterval = setInterval(checkActivity, 1000);
-
-    return () => {
-      clearInterval(activityInterval);
-      clearTimeout(logoutTimer);
-    };
-  }, []);
-
-  useEffect(() => {
-    setIsLoggedIn(false); // Reset isLoggedIn state when component mounts
+    checkLoginStatus();
   }, []);
 
   const handleChange = (event) => {
@@ -128,8 +97,42 @@ const Login = () => {
     });
   };
 
+  useEffect(() => {
+    let logoutTimer;
+
+    const checkActivity = () => {
+      const lastActivityTime = localStorage.getItem("lastActivityTime");
+      if (lastActivityTime) {
+        const inactiveDuration = Date.now() - parseInt(lastActivityTime);
+        if (inactiveDuration >= INACTIVE_TIMEOUT) {
+          handleLogout();
+        } else {
+          // Reset the logout timer
+          clearTimeout(logoutTimer);
+          logoutTimer = setTimeout(handleLogout, INACTIVE_TIMEOUT - inactiveDuration);
+        }
+      }
+    };
+
+    const storedLastActivityTime = localStorage.getItem("lastActivityTime");
+    if (storedLastActivityTime) {
+      const inactiveDuration = Date.now() - parseInt(storedLastActivityTime);
+      if (inactiveDuration < INACTIVE_TIMEOUT) {
+        // Set the logout timer
+        logoutTimer = setTimeout(handleLogout, INACTIVE_TIMEOUT - inactiveDuration);
+      }
+    }
+
+    const activityInterval = setInterval(checkActivity, 1000);
+
+    return () => {
+      clearInterval(activityInterval);
+      clearTimeout(logoutTimer);
+    };
+  }, []);
+
   return (
-    <div>
+    <div className="containlogin">
       {!isLoggedIn ? (
         <div className="login">
           <div>
