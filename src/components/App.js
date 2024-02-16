@@ -5,16 +5,15 @@ import { Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 // import AddDestinationForm from "./AddDestinationForm";
 import Login from "./Login";
-import SearchBar from "./SearchBar"; 
+import SearchBar from "./SearchBar";
 import { useState, useEffect } from "react";
 import "./app.css";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 import AddDestinationForm from "./AddDestinationForm";
-
 
 function App() {
   const [jsonData, setJsonData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("")
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,31 +29,31 @@ function App() {
       }
     };
     fetchData();
-  }, [jsonData]);
-  
-   const filteredData = jsonData.filter(item => {
+  }, []);
+
+  const filteredData = jsonData.filter((item) => {
     return (
       item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       item.location.toLowerCase().includes(searchTerm.toLowerCase())
     );
   });
 
-  window.addEventListener('scroll', function() {
-    let header = document.querySelector('.header');
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector(".header");
     if (window.scrollY > 0) {
-      header.classList.add('scrolled');
+      header.classList.add("scrolled");
     } else {
-      header.classList.remove('scrolled');
+      header.classList.remove("scrolled");
     }
   });
 
   return (
     <div className="App">
       <header className="header">
-      <NavLink to={'/'} >
-      <h2>Maestro Travels</h2>
-      </NavLink>
-      <Navbar />
+        <NavLink to={"/"}>
+          <h2>Maestro Travels</h2>
+        </NavLink>
+        <Navbar />
       </header>
       <Switch>
         <Route exact path="/">
@@ -73,8 +72,8 @@ function App() {
           <Details jsonData={filteredData} />
         </Route>
         <Route exact path="/:id">
-            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          </Route>
+          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        </Route>
       </Switch>
     </div>
   );

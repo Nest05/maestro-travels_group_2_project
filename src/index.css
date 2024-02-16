@@ -5,12 +5,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Andika", sans-serif;
-    
-      
 }
 body{
    background-color: rgb(227,188,154);
 }
+
 span{
     color: blue;
     float: right;

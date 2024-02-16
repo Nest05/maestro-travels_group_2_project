@@ -10,8 +10,9 @@
 }
 .header.scrolled{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
-.header h2{
+.header h1{
     margin-left: -30vw;
     margin-right: 10vw;
     color: rgb(192, 132, 80);
