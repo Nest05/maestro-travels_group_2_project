@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import AddDestinationForm from "./AddDestinationForm";
 import DisplayReviews from "./DisplayReviews";
 import './login.css';
@@ -28,38 +29,23 @@ const Login = () => {
     fetchUsers();
   }, []);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setUserData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
-  };
-
-  const confirmPassword = () => {
-    const userExists = users.some(
-      (user) =>
-        user.username === userData.tourGuide && user.password === userData.password
-    );
-    if (userExists) {
-      setIsLoggedIn(true);
+  useEffect(() => {
+    const handleUserActivity = () => {
       localStorage.setItem("lastActivityTime", Date.now());
-      localStorage.setItem("tourGuide", userData.tourGuide); // Store tourGuide data in local storage
-      setLoginError("");
-    } else {
-      setLoginError("Incorrect username or password");
-    }
-  };
+    };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    localStorage.removeItem("lastActivityTime");
-    localStorage.removeItem("tourGuide");
-    setUserData({
-        tourGuide: "",
-        password: ""
-    })
-  };
+    // Add event listeners for user activity
+    window.addEventListener("mousemove", handleUserActivity);
+    window.addEventListener("mousedown", handleUserActivity);
+    window.addEventListener("keypress", handleUserActivity);
+
+    // Cleanup function to remove event listeners
+    return () => {
+      window.removeEventListener("mousemove", handleUserActivity);
+      window.removeEventListener("mousedown", handleUserActivity);
+      window.removeEventListener("keypress", handleUserActivity);
+    };
+  }, []);
 
   useEffect(() => {
     let logoutTimer;
@@ -104,33 +90,70 @@ const Login = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setIsLoggedIn(false); // Reset isLoggedIn state when component mounts
+  }, []);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setUserData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const confirmPassword = () => {
+    const userExists = users.some(
+      (user) =>
+        user.username === userData.tourGuide && user.password === userData.password
+    );
+    if (userExists) {
+      setIsLoggedIn(true);
+      localStorage.setItem("lastActivityTime", Date.now());
+      localStorage.setItem("tourGuide", userData.tourGuide); // Store tourGuide data in local storage
+      setLoginError("");
+    } else {
+      setLoginError("Incorrect username or password");
+    }
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem("lastActivityTime");
+    localStorage.removeItem("tourGuide");
+    setUserData({
+        tourGuide: "",
+        password: ""
+    });
+  };
+
   return (
-    <div >
+    <div>
       {!isLoggedIn ? (
         <div className="login">
           <div>
-          <h1>Sign in</h1>
-          <h4>to continue to Add Destination</h4>
-          <label htmlFor="login"></label>
-          <br />
-          <input
-            name="tourGuide"
-            type="text"
-            placeholder="Enter username"
-            value={userData.tourGuide}
-            onChange={handleChange}
-          />
-          <br />
-          <input
-            name="password"
-            type="password"
-            placeholder="Enter password"
-            value={userData.password}
-            onChange={handleChange}
-          />
-          <br />
-          {loginError && <p style={{ color: "red" }}>{loginError}</p>}
-          <button onClick={confirmPassword}>Continue</button>
+            <h1>Sign in</h1>
+            <h4>to continue to Add Destination</h4>
+            <label htmlFor="login"></label>
+            <br />
+            <input
+              name="tourGuide"
+              type="text"
+              placeholder="Enter username"
+              value={userData.tourGuide}
+              onChange={handleChange}
+            />
+            <br />
+            <input
+              name="password"
+              type="password"
+              placeholder="Enter password"
+              value={userData.password}
+              onChange={handleChange}
+            />
+            <br />
+            {loginError && <p style={{ color: "red" }}>{loginError}</p>}
+            <button onClick={confirmPassword}>Continue</button>
           </div>
         </div>
       ) : (
