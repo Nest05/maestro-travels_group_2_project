@@ -40,3 +40,11 @@ h1{
   color: white;
 }
 
+.about p{
+  font-weight: 900;
+  font-size: large;
+}
+.about li{
+  font-weight: 900;
+  font-size: large;
+}
