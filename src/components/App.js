@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import "./app.css";
 import { NavLink } from 'react-router-dom'
 import AddDestinationForm from "./AddDestinationForm";
+import Register from "./Register";
 
 
 function App() {
@@ -30,7 +31,13 @@ function App() {
       }
     };
     fetchData();
+  }, [jsonData]);
+
+
+   useEffect(() => {
+    setSearchTerm(""); // Reset searchTerm on component mount or page reload
   }, []);
+
   
    const filteredData = jsonData.filter(item => {
     return (
@@ -58,13 +65,17 @@ function App() {
       </header>
       <Switch>
         <Route exact path="/">
-          <Home jsonData={jsonData} />
+          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <Home jsonData={filteredData} />
         </Route>
         <Route exact path="/about">
           <About />
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/register">
+          <Register />
         </Route>
         <Route exact path="/destination_form">
           <AddDestinationForm />
