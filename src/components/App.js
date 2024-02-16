@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import "./app.css";
 import { NavLink } from 'react-router-dom'
 import AddDestinationForm from "./AddDestinationForm";
+import Register from "./Register";
 
 
 function App() {
@@ -70,6 +71,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/register">
+          <Register />
         </Route>
         <Route exact path="/destination_form">
           <AddDestinationForm />
