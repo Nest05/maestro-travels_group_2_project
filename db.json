@@ -2,50 +2,60 @@
   "comments": [
     {
       "text": "First and foremost, I was impressed by the user-friendly interface of the website. It is well-organized and easy to navigate, making it a breeze to find information on different locations in Kenya. The photos used in the site are also stunning and truly capture the beauty of the country.",
-      "likes": 5,
+      "likes": 6,
       "id": "1"
     },
     {
       "text": "One of the things that stood out to me about Maestro Travels is the variety of destinations they feature. From the bustling city of Nairobi to the serene beaches of Mombasa, it covers a wide range of places that cater to different types of travelers. The site also provides helpful tips and recommendations for each destination, including accommodation options, activities, and local cuisine.",
-      "likes": 6,
+      "likes": 8,
       "id": "2"
     },
     {
       "text": "I also appreciate the detailed information provided about each destination, including its history, culture, and must-see attractions. This not only helps in planning a trip but also gives a deeper understanding of the place before even setting foot there.",
       "likes": 4,
       "id": "3"
+    },
+    {
+      "text": "dfghdjfhjscvbnsc",
+      "likes": 0,
+      "id": "P6TWGHK"
     }
   ],
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "username": "ouma@maestrotravels.com",
       "password": "Ouma2024"
     },
     {
-      "id": "2",
+      "id": 2,
       "username": "naomi@maestrotravels.com",
       "password": "naomi2024"
     },
     {
-      "id": "3",
+      "id": 3,
       "username": "nestor@maestrotravels.com",
       "password": "nestor2024"
     },
     {
-      "id": "4",
+      "id": 4,
       "username": "levis@maestrotravels.com",
       "password": "levis2024"
     },
     {
-      "id": "5",
+      "id": 5,
       "username": "kimani@maestrotravels.com",
       "password": "kimani2024"
     },
     {
-      "id": "6",
+      "id": 6,
       "username": "oliver@maestrotravels.com",
       "password": "oliver2024"
+    },
+    {
+      "email": "ouma@gmail.com",
+      "password": "ouma",
+      "id": 7
     }
   ],
   "destinations": [
@@ -1104,6 +1114,24 @@
           "Fishing"
         ]
       }
+    },
+    {
+      "name": "Ms. Squirrel",
+      "tourGuide": "",
+      "location": "Homabay",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYYGRYaGhoaHBoaGiEeHB8eHBwaHB4hHiQcIS4lHCErHyMcJjgmKy80NTU1HiQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJSsxNDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ/NDQ0Mf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xAA9EAABAwEGAwYFAgUDBAMAAAABAAIRAwQFEiExQVFhcQYigZGhsRMywdHwQuEHFCNi8VJyghUzstJDRJL/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAwIEAQX/xAAhEQADAAIDAQADAQEAAAAAAAAAAQIRIQMSMUEEIlETof/aAAwDAQACEQMRAD8A7MiIgCIiAIiIAiL4gPqIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiA8EwFT7Ta6ld7iHlrAYa0SJHE55lWi8HRTeRrhPqIVQo1gzKVHlr4dX43Gqy2SdittSn8xLm7yZI8dVYaNYPALTIKq9G0A8Fmsds+E7+06j6hZm8e+G+XgT3PpZ0Wr/O08IdjbhIkGdlH1u0tBv6iegVnUr6camn8JpFV6fbOiX4C1wyJBMQY1HVbL+1NANDpdBMZQc/Ned5/p70r+E+i0LNetJ4Ba8QROeWXivtot0DuNLzGUfL5r3sjzqzeJWhXvagzJ1VgP8AuCqV72i1OdhfLGH/AE/LwGnPjwUU2xDJrSHECMUyZ309ApvmSLTwt+nRGXpROlRvmsVa8h+gYv7tvDj7KAuy7AxoL8zwW7aLUIgQvP8AVm54FkmbDaviNmIIMH0K21TrPfPwThABBgunidPSFYbJejHxnBOx+63Np6fpLk43LePCRREVCQREQBERAEREAREQBERAEREAR",
+      "description": "sdfghdfgh",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://www.google.com/imgres?imgurl=https%3A%2F%2Fphotos.travelmyth.com%2Fhotels%2F480%2F17%2Fm-1752304.jpg&tbnid=Wub8iLr5DCIRtM&vet=12ahUKEwit08Tk86iEAxW7dqQEHcGAC6wQMygKegQIARBE..i&imgrefurl=https%3A%2F%2Fwww.travelmyth.com%2FWatamu%2FHotels%2Fbeachfront&docid=6AmT75a8ZRuJQM&w=1024&h=768&q=watamu%20beach%20resort&ved=2ahUKEwit08Tk86iEAxW7dqQEHcGAC6wQMygKegQIARBE"
+        ],
+        "accomodation": "Unavailable",
+        "otherServices": [
+          "Swimming"
+        ]
+      },
+      "id": 37
     }
   ]
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { NavLink } from "react-router-dom";
 import AddDestinationForm from "./AddDestinationForm";
 import DisplayReviews from "./DisplayReviews";
 import './login.css';
@@ -34,12 +33,10 @@ const Login = () => {
       localStorage.setItem("lastActivityTime", Date.now());
     };
 
-    // Add event listeners for user activity
     window.addEventListener("mousemove", handleUserActivity);
     window.addEventListener("mousedown", handleUserActivity);
     window.addEventListener("keypress", handleUserActivity);
 
-    // Cleanup function to remove event listeners
     return () => {
       window.removeEventListener("mousemove", handleUserActivity);
       window.removeEventListener("mousedown", handleUserActivity);
@@ -56,6 +53,10 @@ const Login = () => {
         const inactiveDuration = Date.now() - parseInt(storedLastActivityTime);
         if (inactiveDuration < INACTIVE_TIMEOUT) {
           setIsLoggedIn(true);
+          setUserData({
+            tourGuide: storedTourGuide,
+            password: "" // Clear password for security reasons
+          });
         }
       }
     };
@@ -72,14 +73,14 @@ const Login = () => {
   };
 
   const confirmPassword = () => {
-    const userExists = users.some(
+    const user = users.find(
       (user) =>
         user.username === userData.tourGuide && user.password === userData.password
     );
-    if (userExists) {
+    if (user) {
       setIsLoggedIn(true);
       localStorage.setItem("lastActivityTime", Date.now());
-      localStorage.setItem("tourGuide", userData.tourGuide); // Store tourGuide data in local storage
+      localStorage.setItem("tourGuide", userData.tourGuide);
       setLoginError("");
     } else {
       setLoginError("Incorrect username or password");
@@ -91,8 +92,8 @@ const Login = () => {
     localStorage.removeItem("lastActivityTime");
     localStorage.removeItem("tourGuide");
     setUserData({
-        tourGuide: "",
-        password: ""
+      tourGuide: "",
+      password: ""
     });
   };
 
@@ -106,7 +107,6 @@ const Login = () => {
         if (inactiveDuration >= INACTIVE_TIMEOUT) {
           handleLogout();
         } else {
-          // Reset the logout timer
           clearTimeout(logoutTimer);
           logoutTimer = setTimeout(handleLogout, INACTIVE_TIMEOUT - inactiveDuration);
         }
@@ -117,7 +117,6 @@ const Login = () => {
     if (storedLastActivityTime) {
       const inactiveDuration = Date.now() - parseInt(storedLastActivityTime);
       if (inactiveDuration < INACTIVE_TIMEOUT) {
-        // Set the logout timer
         logoutTimer = setTimeout(handleLogout, INACTIVE_TIMEOUT - inactiveDuration);
       }
     }
@@ -171,4 +170,3 @@ const Login = () => {
 };
 
 export default Login;
-
