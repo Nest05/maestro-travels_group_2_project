@@ -272,6 +272,26 @@
         ]
       },
       "id": 9
+    },
+    {
+      "id": "32c2",
+      "name": "Amboseli",
+      "tourGuide": "kimani@maestrotravels.com",
+      "location": "Amboseli",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg/220px-Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg",
+      "description": "The park is famous for being the best place in the world to get close to free-ranging elephants.[4] Other attractions of the park include opportunities to meet Maasai and visit a Maasai village. The park also has views of Mount Kilimanjaro, the highest free-standing mountain in the world.",
+      "reviews": [],
+      "services": {
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg/220px-Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg",
+          ""
+        ],
+        "accomodation": "Available",
+        "otherServices": [
+          "Game Viewing",
+          "Camping"
+        ]
+      }
     }
   ]
 }

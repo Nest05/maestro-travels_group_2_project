@@ -30,7 +30,7 @@ function App() {
       }
     };
     fetchData();
-  }, []);
+  }, [jsonData]);
   
    const filteredData = jsonData.filter(item => {
     return (
