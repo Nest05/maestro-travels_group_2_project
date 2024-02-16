@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+
+#search{
+    top: 90px;
+    position: absolute;
+}
