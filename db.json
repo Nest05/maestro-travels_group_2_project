@@ -2,17 +2,17 @@
   "comments": [
     {
       "text": "First and foremost, I was impressed by the user-friendly interface of the website. It is well-organized and easy to navigate, making it a breeze to find information on different locations in Kenya. The photos used in the site are also stunning and truly capture the beauty of the country.",
-      "likes": 3,
+      "likes": 5,
       "id": 1
     },
     {
       "text": "One of the things that stood out to me about Maestro Travels is the variety of destinations they feature. From the bustling city of Nairobi to the serene beaches of Mombasa, it covers a wide range of places that cater to different types of travelers. The site also provides helpful tips and recommendations for each destination, including accommodation options, activities, and local cuisine.",
-      "likes": 3,
+      "likes": 4,
       "id": 2
     },
     {
       "text": "I also appreciate the detailed information provided about each destination, including its history, culture, and must-see attractions. This not only helps in planning a trip but also gives a deeper understanding of the place before even setting foot there.",
-      "likes": 3,
+      "likes": 4,
       "id": 3
     }
   ],
@@ -117,10 +117,10 @@
       "image": "https://lh3.googleusercontent.com/p/AF1QipOAxu4HFQu8YAzyPLykTVlMb2p-x0H17Gm282Qi=s680-w680-h510",
       "description": "Karuru Waterfalls is one of the stunning natural attractions in Kenya, situated within the Aberdare National Park. The falls are set against the backdrop of lush, pristine forest and rugged landscapes, contributing to a breathtaking and serene environment. It is known for its impressive height, with multiple cascades creating a picturesque scene. The falls are formed as the Karuru River descends over the Aberdare Range, creating a series of cascades.",
       "reviews": [
-        "Good",
-        "Fair",
-        "Horrible",
-        "Excellent"
+        "I recently had the opportunity to visit Karuru Waterfalls in Kenya and I was absolutely blown away by its beauty. Located in the Aberdare National Park, this stunning natural attraction is a must-visit for anyone traveling to Kenya.",
+        "Upon reaching the park, we were greeted by the majestic sight of the waterfalls, cascading down from a height of over 270 meters. The sound of the water hitting the rocks and the misty spray in the air added to the surreal atmosphere. It was truly a sight to behold",
+        "Reaching the top of the waterfalls, we were rewarded with a panoramic view of the surrounding landscape. It was a peaceful and serene spot, perfect for taking in the beauty of nature. We also got to witness the source of the falls, a small stream that eventually turns into the magnificent waterfall.",
+        "Overall, my visit to Karuru Waterfalls was an unforgettable experience. The natural beauty of the waterfalls, combined with the peaceful surroundings and rich history, made it a must-visit destination in Kenya. I highly recommend adding it to your travel itinerary if you ever find yourself in this beautiful country."
       ],
       "services": {
         "id": 1,
