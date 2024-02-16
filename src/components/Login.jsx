@@ -28,6 +28,24 @@ const Login = () => {
     fetchUsers();
   }, []);
 
+  useEffect(() => {
+    const handleUserActivity = () => {
+      localStorage.setItem("lastActivityTime", Date.now());
+    };
+
+    // Add event listeners for user activity
+    window.addEventListener("mousemove", handleUserActivity);
+    window.addEventListener("mousedown", handleUserActivity);
+    window.addEventListener("keypress", handleUserActivity);
+
+    // Cleanup function to remove event listeners
+    return () => {
+      window.removeEventListener("mousemove", handleUserActivity);
+      window.removeEventListener("mousedown", handleUserActivity);
+      window.removeEventListener("keypress", handleUserActivity);
+    };
+  }, []);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUserData((prevData) => ({
