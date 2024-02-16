@@ -6,4 +6,14 @@
 #search{
     top: 90px;
     position: absolute;
+    padding-left: 1vw;
+}
+
+#search input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label{
+    color: white;
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import AddDestinationForm from "./AddDestinationForm";
 import DisplayReviews from "./DisplayReviews";
 import './login.css';
@@ -131,7 +131,7 @@ const Login = () => {
   }, []);
 
   return (
-    <div>
+    <div className="containlogin">
       {!isLoggedIn ? (
         <div className="login">
           <div>

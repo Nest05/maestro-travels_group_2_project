@@ -82,7 +82,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <h1>Signup</h1>
+      {/* <h1>Signup</h1> */}
       <br />
       <label htmlFor="email">Email:</label>
       <br />

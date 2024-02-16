@@ -31,11 +31,13 @@ function App() {
       }
     };
     fetchData();
-  }, []);
+  }, [jsonData]);
+
 
    useEffect(() => {
     setSearchTerm(""); // Reset searchTerm on component mount or page reload
   }, []);
+
   
    const filteredData = jsonData.filter(item => {
     return (

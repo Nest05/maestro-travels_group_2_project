@@ -1,9 +1,18 @@
+.containlogin{
+    background-image: url("https://cdn.pixabay.com/photo/2018/11/01/05/33/nature-3787200_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -30vh;
+}
 .login{
     margin-top: 30vh;
     margin-left: 30vw;
     width: 40vw;
     height: 40vh;
     display: flex;
+    padding-top: 40vh;
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 0, 0, 0);
