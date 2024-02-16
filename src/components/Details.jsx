@@ -1,6 +1,9 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import './details.css'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './details.css';
 
 function Details({jsonData}) {
 
@@ -9,9 +12,17 @@ function Details({jsonData}) {
 
     const destinationDetails = jsonData.find( data => parseInt(data.id) === parseInt(id));
 
+    let settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
+
   return (
     <div className="detail">
-        <h3>Name: {destinationDetails && destinationDetails.name} </h3>
+        <h3>{destinationDetails && destinationDetails.name} </h3>
         <img src={destinationDetails && destinationDetails.image} alt='Destination look' />
         <h3>Location: {destinationDetails && destinationDetails.location} </h3>
         <h4> Description: {destinationDetails && destinationDetails.description} </h4>
@@ -27,14 +38,15 @@ function Details({jsonData}) {
             <h3>Services</h3>
             <h4>Accomodation: {destinationDetails && destinationDetails.services.accomodation}</h4>
     {/* Map and render the array of images */}
+            <Slider {...settings}>
             { destinationDetails && destinationDetails.services.images.map((image) => {
                 return (
-                    <div>
+                    <div className="slide">
                         <img src={image} alt='Destination look'/>
                     </div>
                 )
             })}
-    
+            </Slider>
     {/* Map and render the array of other services */}
             <h3>We Offer The Following Services at {destinationDetails && destinationDetails.name}</h3>
             <ol>
