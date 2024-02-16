@@ -128,7 +128,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="containlogin">
       {!isLoggedIn ? (
         <div className="login">
           <div>
