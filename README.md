@@ -5,7 +5,7 @@
 - Maestro travels is a web application that lets you view,book,leave a review for different hotels/parks/restaurants.
 - We all have had a moment where we want to get out of the house and spend time with our loved ones or even by ourselves but we did not really know where to go.
 - At Maestro travels you can view different hotels/restaurants/parks and even make a booking/reservation.
-- For hotel owners/tour guides they can upload your hotel/restaurant on the web app.
+- For hotel owners/tour guides you can upload your hotel/restaurant on the web app.
 
 ## Requirements :bulb:
 This is a project for Moringa's phase-2 bootcamp and the requirements were as follows:
