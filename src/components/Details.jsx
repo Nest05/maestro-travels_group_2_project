@@ -1,17 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import './details.css'
 
 function Details({jsonData}) {
 
     // call useParams to access the `params` from the url
     const {id} = useParams();
-    console.log(id)
 
     const destinationDetails = jsonData.find( data => parseInt(data.id) === parseInt(id));
-    console.log(destinationDetails)
 
   return (
-    <div className="about">
+    <div className="detail">
         <h3>Name: {destinationDetails && destinationDetails.name} </h3>
         <img src={destinationDetails && destinationDetails.image} alt='Destination look' />
         <h3>Location: {destinationDetails && destinationDetails.location} </h3>
