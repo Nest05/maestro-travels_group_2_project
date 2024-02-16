@@ -7,7 +7,7 @@
     },
     {
       "text": "One of the things that stood out to me about Maestro Travels is the variety of destinations they feature. From the bustling city of Nairobi to the serene beaches of Mombasa, it covers a wide range of places that cater to different types of travelers. The site also provides helpful tips and recommendations for each destination, including accommodation options, activities, and local cuisine.",
-      "likes": 4,
+      "likes": 6,
       "id": "2"
     },
     {
@@ -904,7 +904,6 @@
       },
       "id": 36
     },
-    
     {
       "id": "32c2",
       "name": "Amboseli",
@@ -1105,5 +1104,6 @@
           "Fishing"
         ]
       }
+    }
   ]
 }
