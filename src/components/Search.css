@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+
+#search{
+    top: 90px;
+    position: absolute;
+    padding-left: 1px;
+}
+
+#search input{
+    padding: 5px;
+    border-radius: 5px;
+}

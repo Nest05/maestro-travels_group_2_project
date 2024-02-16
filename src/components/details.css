@@ -1,10 +1,29 @@
 .detail{
-    margin-top: 11vh;
-    width: 50vw;
+  margin-top: 11vh;
+  width: 50vw;
   text-align: center;
   margin-left: 25vw;
+ 
 }
 li{
     list-style: none;
 }
 
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the desired height for the slides */
+}
+img{
+  height: 40vh;
+  width: 50vw;
+}
