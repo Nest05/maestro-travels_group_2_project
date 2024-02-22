@@ -74,7 +74,7 @@ const Login = () => {
   const confirmPassword = () => {
     const userExists = users.some(
       (user) =>
-        user.username === userData.tourGuide && user.password === userData.password
+        user.email === userData.tourGuide && user.password === userData.password
     );
     if (userExists) {
       setIsLoggedIn(true);

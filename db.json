@@ -19,33 +19,38 @@
   "users": [
     {
       "id": "1",
-      "username": "ouma@maestrotravels.com",
+      "email": "ouma@maestrotravels.com",
       "password": "Ouma2024"
     },
     {
       "id": "2",
-      "username": "naomi@maestrotravels.com",
+      "email": "naomi@maestrotravels.com",
       "password": "naomi2024"
     },
     {
       "id": "3",
-      "username": "nestor@maestrotravels.com",
+      "email": "nestor@maestrotravels.com",
       "password": "nestor2024"
     },
     {
       "id": "4",
-      "username": "levis@maestrotravels.com",
+      "email": "levis@maestrotravels.com",
       "password": "levis2024"
     },
     {
       "id": "5",
-      "username": "kimani@maestrotravels.com",
+      "email": "kimani@maestrotravels.com",
       "password": "kimani2024"
     },
     {
       "id": "6",
-      "username": "oliver@maestrotravels.com",
+      "email": "oliver@maestrotravels.com",
       "password": "oliver2024"
+    },
+    {
+      "email": "bwire@maestrotravels.com",
+      "password": "bwire2024",
+      "id": "EjJWlkr"
     }
   ],
   "destinations": [
