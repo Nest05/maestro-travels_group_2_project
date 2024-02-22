@@ -11,7 +11,7 @@ import "./app.css";
 import { NavLink } from 'react-router-dom'
 import AddDestinationForm from "./AddDestinationForm";
 import Register from "./Register";
-
+import { FaPersonWalkingLuggage } from "react-icons/fa6";
 
 function App() {
   const [jsonData, setJsonData] = useState([]);
@@ -59,7 +59,7 @@ function App() {
     <div className="App">
       <header className="header">
       <NavLink to={'/'} >
-      <h2>Maestro Travels</h2>
+      <h2>Maestro Travels <FaPersonWalkingLuggage /></h2>
       </NavLink>
       <Navbar />
       </header>
