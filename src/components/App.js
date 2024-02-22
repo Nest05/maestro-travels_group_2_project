@@ -31,7 +31,7 @@ function App() {
       }
     };
     fetchData();
-  }, [jsonData]);
+  }, []);
 
 
    useEffect(() => {
