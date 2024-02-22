@@ -1,11 +1,12 @@
 .aboutContainer{
   margin-top: 11vh;
+  backdrop-filter: blur(8px);
 }
 .about{
   width: 50vw;
   text-align: center;
   margin-left: 25vw;
- 
+  backdrop-filter: blur(8px);
 }
 
 .main{

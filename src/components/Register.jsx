@@ -82,10 +82,10 @@ const Register = () => {
 
   return (
     <div className="register">
-      {/* <h1>Signup</h1> */}
+      <h1>Signup</h1>
       <br />
-      <label htmlFor="email">Email:</label>
-      <br />
+      {/* <label htmlFor="email">Email:</label>
+      <br /> */}
       <input
         name="email"
         type="email"
@@ -94,8 +94,8 @@ const Register = () => {
         onChange={handleChange}
       />
       <br />
-      <label htmlFor="password">Password:</label>
-      <br />
+      {/* <label htmlFor="password">Password:</label>
+      <br /> */}
       <input
         name="password"
         type="password"

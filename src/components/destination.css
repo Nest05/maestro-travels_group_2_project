@@ -6,10 +6,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    height: 150vh;
 }
 #destiny form{
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 #destiny button{
     width: 18vw;

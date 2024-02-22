@@ -6,13 +6,13 @@ function Navbar() {
   return (
     <div className="navBar">
       
-          <NavLink to={"/"} >Home</NavLink>
+          <NavLink to={"/"} exact activeClassName="activeLink">Home</NavLink>
         
-          <NavLink to={"/about"}>About</NavLink>
+          <NavLink to={"/about"} activeClassName="activeLink">About</NavLink>
 
-          <NavLink to={"/login"}>Login</NavLink>
+          <NavLink to={"/login"} activeClassName="activeLink">Login</NavLink>
 
-          <NavLink to={"/register"}>Signup</NavLink>
+          <NavLink to={"/register"} activeClassName="activeLink">Signup</NavLink>
        
     </div>
   );

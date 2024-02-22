@@ -4,7 +4,8 @@
 }
 
 #search{
-    top: 90px;
+    margin-top: 22vh;
+    margin-left: 25vw;
     position: absolute;
     padding-left: 1vw;
 }
@@ -12,8 +13,9 @@
 #search input{
     padding: 5px;
     border-radius: 5px;
+    width: 40vw;
 }
 
 label{
-    color: white;
+    color: black;
 }
