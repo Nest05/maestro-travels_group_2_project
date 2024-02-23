@@ -1,6 +1,7 @@
 .register h1{
     position: relative;
-    margin-right: 44vw;
+    /* margin-right: 47vw; */
+    font-size: 40px;
 }
 
 .register input{
