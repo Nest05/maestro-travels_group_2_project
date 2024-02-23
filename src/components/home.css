@@ -62,7 +62,7 @@
 }
 .images img {
     height: 60vh;
-    width: 60vw;
+    width: 100%;
     
 }
 .images{
@@ -70,4 +70,5 @@
     overflow-x: scroll;
     gap: 5px;
     width: 60vw;
+    margin-left: 5vw;
 }
