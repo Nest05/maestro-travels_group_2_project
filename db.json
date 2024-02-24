@@ -489,11 +489,7 @@
           "https://www.lakenakurukenya.com/wp-content/uploads/2022/04/Karumu-Waterfalls-750x450-1.jpg"
         ],
         "accomodation": "Available",
-        "otherServices": [
-          "Camping",
-          "Boat riding",
-          "Nature walks"
-        ]
+        "otherServices": ["Camping", "Boat riding", "Nature walks"]
       },
       "id": 19
     },
@@ -918,11 +914,7 @@
           "https://aberdarecountr.wpenginepowered.com/wp-content/uploads/2017/02/14-aberdare-country-club-1.jpg"
         ],
         "accomodation": "Available",
-        "otherServices": [
-          "Hiking",
-          "Bicycle Riding",
-          "Game Viewing"
-        ]
+        "otherServices": ["Hiking", "Bicycle Riding", "Game Viewing"]
       }
     },
     {
@@ -940,11 +932,7 @@
           "https://i.ytimg.com/vi/xlCDJE9RY10/maxresdefault.jpg"
         ],
         "accomodation": "Unavailable",
-        "otherServices": [
-          "Hiking",
-          "Photography",
-          "Art Gallery"
-        ]
+        "otherServices": ["Hiking", "Photography", "Art Gallery"]
       }
     },
     {
@@ -961,11 +949,7 @@
           "https://www.lakenakurukenya.com/wp-content/uploads/2020/09/Mount-Longonotsa.jpg"
         ],
         "accomodation": "Available",
-        "otherServices": [
-          "Cycling",
-          "Hiking",
-          "Team Building"
-        ]
+        "otherServices": ["Cycling", "Hiking", "Team Building"]
       }
     },
     {
@@ -983,10 +967,7 @@
           "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwhc.unesco.org%2Fen%2Flist%2F1295%2F&psig=AOvVaw3WQvqcVZI1ertMRfdQCHgU&ust=1708164253497000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjAl_HNr4QDFQAAAAAdAAAAABAS"
         ],
         "accomodation": "Available",
-        "otherServices": [
-          "Archaeology",
-          "Gallery Viewing"
-        ]
+        "otherServices": ["Archaeology", "Gallery Viewing"]
       }
     },
     {
