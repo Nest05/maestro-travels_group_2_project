@@ -67,7 +67,7 @@ function Home({jsonData}) {
           inspire and guide travelers to explore the diverse landscapes, cultural
           treasures, and hidden gems that make Kenya a captivating destination.
         </p>
-        <NavLink to={"/about"}>
+        <NavLink to={"/about#top"}>
         <button>See more...</button>
         </NavLink>
       </div>

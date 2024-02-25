@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./about.css";
 import Comments from "./Comments";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 function About() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#top") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
-    <div className="aboutContainer">
+    <div id="aboutTop">
       <div className="about">
       <h1>About Us</h1>
       <p>
