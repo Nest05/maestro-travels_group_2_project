@@ -21,6 +21,7 @@ form button:hover{
     /* position: fixed; */
     /* background-color: rgb(240, 248, 255, 0.5); */
     /* margin-left: -5vw; */
+    position: absolute;
     border-radius: 1em;
     margin-left: 2.1vw;
     width: 45vw;

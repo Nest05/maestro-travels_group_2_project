@@ -15,50 +15,52 @@ function About() {
   return (
     <div id="aboutTop">
       <div className="about">
-      <h1>About Us</h1>
-      <p>
-        Welcome to <strong>Maestro Travels</strong> – Your Gateway to Kenya
-        Adventures.
-      </p>
+        <div id="about1">
+          <h1>About Us</h1>
+          <p>
+            Welcome to <strong className="strong">Maestro Travels</strong> – Your Gateway to Kenya
+            Adventures.
+          </p>
 
-      <h3>Our Mission</h3>
-      <p>
-        At Maestro Travels, we are passionate about showcasing the rich tapestry
-        of tourist destinations that Kenya has to offer. Our mission is to
-        inspire and guide travelers to explore the diverse landscapes, cultural
-        treasures, and hidden gems that make Kenya a captivating destination.
-      </p>
-
-      <h3>What Sets Us Apart</h3>
-      <ul>
-        <li>
-          <strong>User-Generated Content:</strong> We believe in the power of
-          community. Not only can you explore curated travel destinations, but
-          you can also contribute by adding your favorite spots and sharing your
-          experiences with fellow travelers.
-        </li>
-        <li>
-          <strong>Comprehensive Coverage:</strong> From breathtaking natural
-          wonders to historical landmarks, bustling cities to tranquil retreats,
-          our platform covers a wide array of travel destinations to suit every
-          wanderer's taste.
-        </li>
-        <li>
-          <strong>Interactive and Informative:</strong> Our platform goes beyond
-          static information. Discover detailed insights, travel tips, and
-          firsthand accounts from those who have explored the beauty of Kenya.
-        </li>
-      </ul>
-
-      <h3>Meet The Team</h3>
-      <p>
-        Behind Maestro Travels is a dedicated team of travel enthusiasts who
-        share a common goal – to make your travel experiences unforgettable.
-        Learn more about the faces behind the scenes and their love for
-        exploration.
-      </p>
+          <h3>Our Mission</h3>
+          <p>
+            At Maestro Travels, we are passionate about showcasing the rich tapestry
+            of tourist destinations that Kenya has to offer. <strong className="strong">Our mission is to
+            inspire and guide travelers to explore the diverse landscapes, cultural
+            treasures, and hidden gems that make Kenya a captivating destination.</strong>
+          </p>
+        </div>
+        <div id="about2">
+          <h3>What Sets Us Apart</h3>
+          <ul>
+            <li>
+              <strong className="strong">User-Generated Content:</strong> We believe in the power of
+              community. Not only can you explore curated travel destinations, but
+              you can also contribute by adding your favorite spots and sharing your
+              experiences with fellow travelers.
+            </li>
+            <li>
+              <strong className="strong">Comprehensive Coverage:</strong> From breathtaking natural
+              wonders to historical landmarks, bustling cities to tranquil retreats,
+              our platform covers a wide array of travel destinations to suit every
+              wanderer's taste.
+            </li>
+            <li>
+              <strong className="strong">Interactive and Informative:</strong> Our platform goes beyond
+              static information. Discover detailed insights, travel tips, and
+              firsthand accounts from those who have explored the beauty of Kenya.
+            </li>
+          </ul>
+        </div>
+        <h3>Meet The Team</h3>
+        <p>
+          Behind Maestro Travels is a dedicated team of travel enthusiasts who
+          share a common goal – <strong className="strong">to make your travel experiences unforgettable.</strong>
+          Learn more about the faces behind the scenes and their love for
+          exploration.
+        </p>
       </div>
-      <div className="main">
+      <div id="main">
         <div className="my-container">
           <div className="team-image">
             <img src="https://rb.gy/oq9v9w" alt="Nestor" />
@@ -123,31 +125,36 @@ function About() {
         </div>
       </div>
       <div className="about">
-      <h3>How You Can Contribute</h3>
-      <p>
-        Maestro Travels thrives on the contributions of the travel community. If
-        you have a favorite spot, a hidden gem, or an off-the-beaten-path
-        destination that you'd like to share with the world, join us in building
-        a comprehensive travel guide for Kenya. Your insights can inspire and
-        guide fellow travelers on their journeys.
-      </p>
-
-      <h3>Connect With Us</h3>
-      <p>
-        We love connecting with our community! Follow us on social media for the
-        latest updates, travel inspiration, and to be part of the conversation.
-        Feel free to reach out with any questions, suggestions, or collaboration
-        ideas.
-      </p>
-      <h3>Start Your Journey With Maestro Travels</h3>
-      <p>
-        Whether you're a seasoned traveler or planning your first adventure,
-        Maestro Travels is here to be your companion in exploring the beauty and
-        wonders of Kenya. Join us in discovering the extraordinary destinations
-        that await you!
-      </p>
-      <p>Happy Exploring!</p>
-      <Comments />
+        <div id="about3">
+          <h3>How You Can Contribute</h3>
+          <p>
+            Maestro Travels thrives on the contributions of the travel community. If
+            you have a favorite spot, a hidden gem, or an off-the-beaten-path
+            destination that you'd like to share with the world, <strong className="strong">join us in building
+            a comprehensive travel guide for Kenya.</strong> Your insights can inspire and
+            guide fellow travelers on their journeys.
+          </p>
+        </div>
+        <div id="about4">
+          <h3>Connect With Us</h3>
+          <p>
+            We love connecting with our community! <strong className="strong">Follow us on social media for the
+            latest updates, travel inspiration, and to be part of the conversation.</strong>
+            Feel free to reach out with any questions, suggestions, or collaboration
+            ideas.
+          </p>
+        </div>
+        <div id="about5">
+          <h3>Start Your Journey With Maestro Travels</h3>
+          <p>
+            Whether you're a seasoned traveler or planning your first adventure,
+            <strong className="strong">Maestro Travels is here to be your companion in exploring the beauty and
+            wonders of Kenya.</strong> Join us in discovering the extraordinary destinations
+            that await you!
+          </p>
+          <p>Happy Exploring!</p>
+        </div>
+        <Comments />
       </div>
 
     </div>
@@ -155,3 +162,18 @@ function About() {
 }
 export default About;
 
+/* 
+About images;
+
+ - https://cdn.pixabay.com/photo/2019/04/12/11/46/antelope-4121962_640.jpg
+ - https://cdn.pixabay.com/photo/2023/06/10/14/48/zebras-8054175_640.jpg
+ - https://cdn.pixabay.com/photo/2020/04/02/07/38/hot-air-balloon-4993835_640.jpg
+ - https://cdn.pixabay.com/photo/2021/06/24/12/36/hut-6361139_640.jpg
+ - https://cdn.pixabay.com/photo/2021/06/24/12/35/beach-6361126_640.jpg
+ - https://cdn.pixabay.com/photo/2015/08/30/15/43/palms-914351_1280.jpg
+ - https://cdn.pixabay.com/photo/2019/07/29/21/15/warrior-4371555_640.jpg
+ - https://cdn.pixabay.com/photo/2013/05/08/04/33/nairobi-109492_640.jpg
+ - https://cdn.pixabay.com/photo/2013/07/30/15/06/kenya-168880_640.jpg
+
+
+*/
