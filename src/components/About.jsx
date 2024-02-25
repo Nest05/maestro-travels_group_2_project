@@ -15,6 +15,9 @@ function About() {
   return (
     <div id="aboutTop">
       <div className="about">
+        <div id="imageContainer7">
+          <img src='https://cdn.pixabay.com/photo/2019/04/12/11/46/antelope-4121962_640.jpg' alt='Antelope'/>
+        </div>
         <div id="about1">
           <h1>About Us</h1>
           <p>
@@ -29,6 +32,9 @@ function About() {
             inspire and guide travelers to explore the diverse landscapes, cultural
             treasures, and hidden gems that make Kenya a captivating destination.</strong>
           </p>
+        </div>
+        <div id="imageContainer8">
+          <img src='https://cdn.pixabay.com/photo/2015/02/20/21/01/kenya-643631_640.png' alt='Kenyan flag on hand'/>
         </div>
         <div id="about2">
           <h3>What Sets Us Apart</h3>
@@ -51,6 +57,13 @@ function About() {
               firsthand accounts from those who have explored the beauty of Kenya.
             </li>
           </ul>
+        </div>
+        <div id="about6">
+        <div id="imageContainer9">
+          <img src='https://cdn.pixabay.com/photo/2019/07/29/21/15/warrior-4371555_640.jpg' alt='Maasai warriors'/>
+        </div>
+        <div id="imageContainer10">
+          <img src='https://cdn.pixabay.com/photo/2021/06/24/12/35/beach-6361126_640.jpg' alt='Maasai warriors'/>
         </div>
         <h3>Meet The Team</h3>
         <p>
@@ -123,6 +136,7 @@ function About() {
             <p>Back-End Developer</p>
           </div>
         </div>
+      </div>
       </div>
       <div className="about">
         <div id="about3">

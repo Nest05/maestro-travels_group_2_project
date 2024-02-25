@@ -6,19 +6,21 @@
   width: 100vw;
   text-align: center;
   /* margin-left: 3vw; */
-  background-color: rgb(210, 105, 30, 0.1);
-  
+  position: absolute;
+  background-color: rgb(255, 215, 0, 0.1);
 }
 
 #main{
   z-index: 0;
-  margin-top: 20px;
+  margin-top: vh;
+  position: absolute;
   display: flex;
   gap: 5px;
   box-sizing: content-box;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: rgb(0, 128, 0, 0.2);
+  padding-right: 2vw;
+  background-color: rgb(173, 255, 47, 0.2);
 }
 
 .my-container{
@@ -37,21 +39,26 @@
 ul{
   list-style: none;
 }
-h3{
+.about h3{
   margin-top: 3vh;
+  font-size: 35px;
   color: brown;
 }
-h1{
+#about1 h1{
   color: rgb(0, 128, 0, 0.5);
+  padding-bottom: 1vh;
+  font-size: 60px;
+  border-bottom: 3px solid;
+  margin-top: 10vh;
 }
 
 .about p{
   font-weight: 900;
-  font-size: large;
+  font-size: 30px;
 }
 .about li{
   font-weight: 900;
-  font-size: large;
+  font-size: 30px;
 }
 .strong{
   color: rgb(0, 128, 0, 0.8);
@@ -73,4 +80,89 @@ h1{
 .page img {
   max-width: 100%;
   max-height: 100%;
+}
+#imageContainer7{
+  margin-top: 5vh;
+  position: absolute;
+  border-radius: 5%;
+  overflow: hidden;
+  height:80vh;
+  width: 45vw;
+  margin-left: 49vw;
+  margin-right: 3vw;
+  
+}
+#imageContainer7 img{
+  height: 100%;
+  width: 100%;
+}
+#about1{
+  position: absolute;
+  width: 45vw;
+  padding-left: 3vw;
+}
+#about2{
+  position: absolute;
+  margin-top: -210vh;
+  background-color: rgb(255, 255, 255,0.8);
+  padding: 7vw 7vh;
+  
+}
+#about3{
+  margin-top: 170vh;
+  width: 40vw;
+  padding-right: 6vw;
+}
+#about4{
+  margin-top: 40vh;
+  width: 40vw;
+  padding-right: 2vw;
+  margin-left: 60vw;
+}
+#about5{
+  margin-top: 95vh;
+}
+#about5 p{
+  padding-right: 3vw;
+}
+#about6 p{
+  padding-right: 3vw;
+}
+#about6{
+  margin-top: 20vh;
+  background-color: rgb(173, 255, 47, 0.2);
+}
+#imageContainer8{
+  padding-top: 100vh;
+  height: 300vh;
+}
+#imageContainer8 img{
+  height: 100%;
+}
+#imageContainer9 {
+  position: absolute;
+  width: 30vw;
+  height: 50vh;
+  margin-top: -80vh;
+  margin-left: 3vw;
+  animation: bubble-collapse 2s infinite alternate;
+}
+#imageContainer9 img{
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  width: 100%;
+  height: 100%;
+}
+#imageContainer10{
+  position: absolute;
+  width: 30vw;
+  height: 70vh;
+  margin-top: -140vh;
+  margin-left: 67vw;
+  animation: bubble-collapse 4s infinite alternate;
+
+}
+#imageContainer10 img{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  height: 100%;
+  width: 100%;
 }

@@ -68,14 +68,15 @@ function Comments() {
   }, []);
 
   return (
-    <div className='commentContainer'><h3>Leave a Comment</h3>
+    <div id='commentContainer'><h3>Leave a Comment</h3>
     <form onSubmit={handleSubmit}>
       <textarea name="comment" placeholder="Type your comment here..." required />
       <button type="submit">Submit</button>
     </form>
 
-    <h3>Comments</h3>
+    
     <div className="comments-section">
+    <h4>Comments</h4>
       {comments.map((comment, index) => (
         <div key={index} className="comment">
           <p>{comment.text}</p>

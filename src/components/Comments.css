@@ -1,11 +1,22 @@
+#commentContainer{
+    position: absolute;
+}
+#commentContainer h3{
+    margin-left: 50vw;
+    margin-top: 60vh;
+}
 form textarea{
     width: 45vw;
     height: 10vh;
     background-color: rgb(240, 248, 255, 0.5);
     border-radius: 10px;
+    margin-left: 50vw;
 }
 form button{
+    position: absolute;
     padding: 0.5em;
+    margin-top: 12vh;
+    margin-left: -27vw;
     width: 10vw;
 }
 form button:hover{
@@ -23,21 +34,16 @@ form button:hover{
     /* margin-left: -5vw; */
     position: absolute;
     border-radius: 1em;
-    margin-left: 2.1vw;
+    margin-left: 3vw;
     width: 45vw;
     height: 10vh;
-  
+    margin-top: -65vh;
 }
 .comments-section button{
     padding: 0.2em;
-    width: 5vw;
-    
-    
+    width: 5vw; 
 }
-/* .comment{
-    position: fixed;
-    margin-left: 25vw;
-    width: 30vw;
-    height: 20vh;
-    overflow: auto;
-} */
+.comments-section h4{
+    color: brown;
+    font-size: xx-large;
+}
