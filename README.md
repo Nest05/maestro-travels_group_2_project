@@ -59,7 +59,7 @@ json-server --watch db.json
 ```
 ## Authors :black_nib:
 
-- **Nestar Masinde** <[Nest05](https://github.com/Nest05)>
+- **Nestor Masinde** <[Nest05](https://github.com/Nest05)>
 - **Naomi Lagat** <[Naomie-Jerutoe](https://github.com/Naomie-Jerutoe)>
 - **John Ouma** <[OumaArera](https://github.com/OumaArera)>
 - **John Kimani** <[Kimoney](https://github.com/Kimoney)>
